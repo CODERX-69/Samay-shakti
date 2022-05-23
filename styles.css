@@ -165,8 +165,8 @@ h1 {
 
 #my-img2 {
     background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
     /* background: url('/img/Group\ 14.png') no-repeat center center/cover; */
     height: 500px;
     width: 100%;
@@ -208,7 +208,8 @@ h5 a {
     /* width: 10rem; */
     border: none;
 }
-.card-1 a:hover{
+
+.card-1 a:hover {
     color: #BA1F21 !important;
     text-decoration: underline;
     line-height: 1px;
@@ -241,9 +242,10 @@ h5 a {
     font-size: 16px;
     font-weight: 600;
 }
+
 #cb1 button:hover,
 #cb2 button:hover,
-#cb3 button:hover{
+#cb3 button:hover {
     color: #BA1F21;
 }
 
@@ -254,7 +256,8 @@ h5 a {
     max-height: 100%;
     margin: auto;
 }
-a:hover{
+
+a:hover {
     color: #BA1F21;
 }
 
@@ -265,7 +268,7 @@ a:hover{
     height: 321px;
 } */
 
- p a{
+p a {
     text-decoration: none;
 }
 
@@ -296,7 +299,7 @@ p a:hover {
     #heading2 {
         width: 230px;
     }
-  
+
 }
 
 @media (max-width: 768px) {
@@ -370,14 +373,17 @@ p a:hover {
         background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
     }
 }
-@media (min-width: 320px) and (max-width: 375px){
+
+@media (min-width: 320px) and (max-width: 375px) {
     h1 {
-            font-size: 30px !important;
-        }
-    #heading{
+        font-size: 30px !important;
+    }
+
+    #heading {
         width: 328px;
     }
-    #heading2{
+
+    #heading2 {
         width: 310px;
     }
 }
