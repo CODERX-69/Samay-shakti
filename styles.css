@@ -1,0 +1,365 @@
+/* Demo Margin */
+/* .container{
+  margin-top: 40px;
+  margin-bottom: 40px;
+} */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+    width: 100%;
+    height: 104px;
+
+    flex-wrap: nowrap;
+    background: #FFFFFF;
+    /* Light shadow Y-2 */
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    padding-right: 24px !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #BA1F21 !important;
+    z-index: 1;
+}
+
+#searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#bla {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+
+    width: 432px;
+    height: 46px;
+
+    background: #FFFFFF;
+    border: 1px solid #F49736;
+    border-radius: 100px;
+
+    /* Inside auto layout */
+
+
+}
+
+#profile {
+    font-size: 25px !important;
+    background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600 !important;
+}
+
+#menu {
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, #FACA66 0%, #F17738 100%);
+    /* left: 0px; */
+    /* top: 123px; */
+
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, #FACA66 0%, #F17738 100%);
+}
+
+
+li a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #BA1F21;
+}
+
+#carouselExampleIndicators {
+    margin-top: 30px;
+    /* top: 203px; */
+    /* position:absolute; */
+}
+
+#carousel-indicators.button.span {
+    color: #111;
+}
+
+h1 {
+    font-size: 50px !important;
+    font-weight: 700 !important;
+}
+
+#heading {
+    margin: auto;
+    margin-top: 50px !important;
+    width: 371px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.745779px;
+    background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+#heading2 {
+    margin: auto;
+    margin-bottom: 20px !important;
+    width: 402px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.745779px;
+    background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: solid 4px #F5974A;
+}
+
+#my-img {
+    background: url('/img/Group\ 13.png') no-repeat center center/cover;
+    height: 600px;
+    /* width: 100%; */
+}
+
+#my-img2 {
+    background: url('/img/Group\ 14.png') no-repeat center center/cover;
+    height: 900px;
+    /* width: 100%; */
+}
+
+h5 a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* This may not be needed depending on if you want to restrict the card size*/
+#c1,
+#c2,
+#c3 {
+    border: none;
+    height: 450px;
+    border-radius: 20px !important;
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+    max-width: 380px;
+    align-items: center;
+}
+
+.card-image-wrapper {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    /* Just to show the size of the image wrapper */
+    /* background-color: darkgrey; */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-1 {
+    text-align: center;
+    /* width: 10rem; */
+    border: none;
+}
+.card-1 a:hover{
+    color: #BA1F21 !important;
+    text-decoration: underline;
+    line-height: 1px;
+}
+
+.cb {
+
+    text-align: center !important;
+}
+
+.container h5 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 16px;
+    color: white;
+}
+
+#cb1 button,
+#cb2 button,
+#cb3 button {
+    width: 154px !important;
+    background: #FFFFFF;
+    border-radius: 56.3333px;
+    border: none;
+    color: #F17738;
+    font-size: 16px;
+    font-weight: 600;
+}
+#cb1 button:hover,
+#cb2 button:hover,
+#cb3 button:hover{
+    color: #BA1F21;
+}
+
+.card-img-top {
+    padding: 25px;
+    display: block;
+    width: auto;
+    max-height: 100%;
+    margin: auto;
+}
+a:hover{
+    color: #BA1F21;
+}
+
+/* footer {
+    margin-top: 40px;
+    background-color: #BA1F21;
+    color: white;
+    height: 321px;
+} */
+
+ p a{
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline 1px;
+}
+
+.copyright {
+    margin-top: 60px;
+}
+
+@media (max-width:375px) {
+    #nav {
+
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    #bla {
+        width: 30px;
+    }
+
+    #profile {
+        display: none;
+    }
+
+    #heading2 {
+        width: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        display: flex;
+        justify-content: center;
+    }
+
+    #cb a {
+        margin-top: 0px;
+    }
+
+    #nav {
+
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+
+    #bla {
+        width: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1064px) {
+    #nav {
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    #bla {
+        width: 300px;
+    }
+}
+
+@media (min-width:1400px) {
+
+    #cb a {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    #cb a {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 397px) and (max-width: 424px) {
+    #cb a {
+        margin-top: 20px;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width:709px) {
+    #kundali {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:992px) {
+    .navbar-nav {
+        z-index: 999;
+        background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+    }
+}
