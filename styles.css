@@ -296,6 +296,7 @@ p a:hover {
     #heading2 {
         width: 230px;
     }
+  
 }
 
 @media (max-width: 768px) {
@@ -367,5 +368,16 @@ p a:hover {
     .navbar-nav {
         z-index: 999;
         background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+    }
+}
+@media (min-width: 320px) and (max-width: 375px){
+    h1 {
+            font-size: 30px !important;
+        }
+    #heading{
+        width: 328px;
+    }
+    #heading2{
+        width: 310px;
     }
 }
