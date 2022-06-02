@@ -3,6 +3,10 @@
   margin-top: 40px;
   margin-bottom: 40px;
 } */
+.container {
+    max-width: fit-content;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -10,6 +14,14 @@
 .navbar {
     background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
     ;
+}
+
+.iconify {
+    position: relative;
+}
+
+.is-active .iconify {
+    display: block;
 }
 
 #nav {
@@ -207,19 +219,69 @@ li a:hover {
 }
 
 #my-img {
- position: relative;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-img::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background-repeat: no-repeat;
+}
+#my-img2::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background-repeat: no-repeat;
+    bottom: 50%;
 }
 
 #my-img2 {
     position: relative;
+    text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
 }
-.centered {
-    position: absolute;
+.container.text-center.text{
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #C70000;
 }
+.h-primary {
+    font-size: 3.5rem;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+.h-1 {
+    padding-bottom: 12px;
+}
+
+hr {
+    margin: auto !important;
+    width: 25rem;
+    height: 5px !important;
+    color: #BA1F21;
+    opacity: 1 !important;
+    text-align: center;
+}
+
 h5 a {
     text-decoration: none;
     color: black;
@@ -237,6 +299,17 @@ h5 a {
     background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
     max-width: 380px;
     align-items: center;
+    transition: transform .2s;
+}
+
+#c1:hover,
+#c2:hover,
+#c3:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 .card-image-wrapper {
@@ -349,6 +422,26 @@ p a:hover {
     flex-wrap: wrap;
 }
 
+.container.text-center.book-text {
+    padding: 0px 200px;
+    position: absolute;
+}
+
+ol {
+    list-style: none;
+    text-align: initial;
+    line-height: 3rem;
+}
+.ol1 li{
+    color: #BA1F21;
+    font-weight: 900;
+}
+.ol2 li{
+    color: #BA1F21;
+}
+
+
+
 @media (min-width: 601px) {
     .home-demo .item {
         margin: 5px;
@@ -358,15 +451,66 @@ p a:hover {
 @media (max-width:412px) {
     .home-slider {
         justify-content: center;
+        column-count: 2;
     }
 
     #bla {
         width: 110px !important;
     }
+  .container.text-center.text {
+      top: 40%;
+  }
+   .container.text-center.text .h-1{
+       font-size: 0.8rem !important;
+   }
+   .container.text-center.text p{
+       font-size: 0.4rem;
+   }
+   .h-primary {
+       font-size: 1.2rem !important;
+   }
+
+}
+
+@media (min-width:425px ) and (max-width:900px) {
+
+    .container.text-center.text .h-1 {
+            font-size: 1rem !important;
+            font-weight: bolder !important;
+            padding-bottom: 10px;
+        }
+    
+        .container.text-center.text p {
+            font-size: 0.5rem;
+            /* font-weight: bolder !important; */
+        }
+    
+        .h-primary {
+            font-size: 1.6rem !important;
+        }
+    hr{
+        width: 10rem;
+        height: 3px !important;
+    }
+}
+
+@media (max-width:460px) {
+    .card-1 {
+        width: 180px;
+    }
+
+    .card-1 h5 a {
+        font-size: 14px !important;
+    }
 }
 
 
-
+@media (min-width:992px) and (max-width:1074px) {
+    .nav-link {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
 
 
 
@@ -394,6 +538,24 @@ p a:hover {
 
 }
 
+@media (max-width:991px) {
+    #panchang {
+        flex-wrap: nowrap;
+    }
+
+    .container.text-center.book-text ol li {
+        font-size: 2rem;
+    }
+
+    ol {
+        line-height: 2rem;
+    }
+
+    .container.text-center.book-text {
+        padding: 0px 130px !important;
+    }
+}
+
 @media (max-width: 768px) {
     .col {
         display: flex;
@@ -415,9 +577,28 @@ p a:hover {
     #bla {
         width: 150px;
     }
+
+    #panchang {
+        flex-wrap: nowrap;
+    }
+
+    .container.text-center.book-text ol li {
+        font-size: 0.5rem;
+    }
+
+    ol {
+        line-height: 1rem;
+    }
+
+    .container.text-center.book-text {
+        padding: 0px 90px;
+    }
+
+
 }
 
-@media (min-width: 768px) and (max-width: 1064px) {
+
+@media (min-width: 768px) and (max-width: 1200px) {
     #nav {
         padding: 0;
         display: flex;
@@ -427,6 +608,29 @@ p a:hover {
 
     #bla {
         width: 300px;
+    }
+
+    .container.text-center.book-text ol li {
+        font-size: 0.8rem !important;
+    }
+
+    .container.text-center.book-text {
+        padding: 0px 160px;
+    }
+
+    #panchang {
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media (min-width: 991px) and (max-width: 1100px) {
+    .container.text-center.book-text ol li {
+        font-size: 12px !important;
+    }
+
+    ol {
+        line-height: 2.5rem;
     }
 }
 
@@ -468,6 +672,20 @@ p a:hover {
         font-size: 30px !important;
     } */
 
+    .container.text-center.book-text {
+        width: 570px !important;
+        padding: 0px 0px !important;
+    }
+
+    ol {
+
+        line-height: 0.5rem !important;
+    }
+
+    ol li {
+        font-size: 0.3rem !important;
+    }
+
     #heading h1 {
         /* width: 328px; */
         font-size: 30px !important;
@@ -505,3 +723,60 @@ p a:hover {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+

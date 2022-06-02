@@ -31,17 +31,17 @@
         <div class="container-fluid">
             <img src="img/image 1.png" alt="">
             <div id="searchbar">
-                <input class="form-control me-2" id="bla" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" id="bla" type="search" placeholder="Search" aria-label="Search" data-search>
                 <span class="iconify" data-icon="akar-icons:search"
                     style="color: #f24e1e; font-size: 20px; margin-right: 20px; position: absolute;"></span>
             </div>
             <span id="profile">Welcome :
                 Name</span>
-            <div class="icons" onclick="menuToggle();">
-                <span class="iconify" data-icon="gg:profile">
+            <div class="icons">
+                <span onclick="menuToggle(); document.getElementById('drpdwn').style.display = 'block'"  class="iconify" id="clickable"  data-icon="gg:profile">
                 </span>
-                <div class="pro-menu">
-                    <ul>
+                <div class="pro-menu" id="drpdwn">
+                    <ul class="pro-list">
                         <li class="pro-items"><a href="">My Profile</a></li>
                         <li class="pro-items"><a href="">My Orders</a></li>
                         <li class="pro-items"><a href="">Track Orders</a></li>
@@ -117,7 +117,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Other Service</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -270,13 +270,67 @@
         <div id="heading2">
             <h1>!! आज का पंचांग !!</h1>
         </div>
-        <section id="#my-img" style="margin-top:40px;">
+        <section id="my-img">
             <img src="img/Group 13.png" alt="" style="width: 100%;">
-        </section>
-        <section>
+            <div class="container text-center book-text" > 
+                <div class="row" id="panchang">
+                    
+                    <div class="col d-flex justify-content-end">
+                        <ol class="ol1">
+                            <li> विक्रमी सम्बत् </li>
+                           <li> विक्रमी सम्बतांक </li>
+                            <li> शकः सम्बतांक </li>
+                            <li> अयनार्क </li>
+                            <li> गोलर्क </li>
+                            <li> ऋतु </li>
+                            <li> सूर्योदय (काशी)</li>
 
-            <img id="#my-img2" src="img/Group 14.png" alt="" style="width: 100%;">
-            <div class="centered">MUHURT</div>
+                        </ol>
+                    </div>
+                    <div class="col d-flex justify-content-start">
+                        <ol class="ol2">
+                            <li>: आनन्द </li>
+                            <li>: 2078</li>
+                            <li>:1943 </li>
+                            <li>: सोम्य (उत्तर)</li>
+                            <li>: सोम्य (उत्तर)</li>
+                            <li>: ग्रीष्म</li>
+                            <li>: प्रातः 05:24</li>
+                        </ol>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <ol class="ol1">
+                            <li> विक्रमी सम्बत्  </li>
+                            <li> विक्रमी सम्बतांक </li>
+                            <li> शकः सम्बतांक</li>
+                            <li> अयनार्क </li>
+                            <li> गोलर्क </li>
+                            <li> ऋतु </li>
+                            <li> सूर्योदय (काशी) </li>
+                        </ol>
+                    </div>
+                    <div class="col d-flex justify-content-start">
+                        <ol class="ol2">
+                            <li>: आनन्द </li>
+                            <li>: 2078</li>
+                            <li>:1943 </li>
+                            <li>: सोम्य (उत्तर)</li>
+                            <li>: सोम्य (उत्तर)</li>
+                            <li>: ग्रीष्म</li>
+                            <li>: प्रातः 05:24</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="my-img2">
+            <img src="img/Group 14.png" alt="" style="width: 100%;">
+            <div class="container text-center text">
+                <h1 class="h-1"><b>!! आज का व्रत त्योहार !!</b></h1>
+                <hr>
+                <h1 class="h-primary"><strong>योगिनी एकादशी व्रत</strong></h1>
+                <p><b>द्रष्टव्य : इस व्रत के प्रभाव से कुष्ठ (कोढ़) रोगादि का नाश होता है ।</b> </p>
+            </div>
         </section>
     </section>
     <section id="kundali" class="d-flex flex-column justify-content-center" style="margin-top:50px;">
@@ -452,7 +506,7 @@
     </div>
     <section>
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="row row-cols-1 col-xs-6 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col col-sm-12 col-xs-12 justify-content-center">
                     <div id="c1" class="card">
                         <div class="card-image-wrapper">
@@ -465,7 +519,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-sm-12 col-xs-12 justify-content-center">
+                <div class="col col-sm-12 col-xs-6 col-xs-12 justify-content-center">
                     <div id="c2" class="card">
                         <div class="card-image-wrapper">
                             <img src="img/image 9.png" class="card-img-top img-fluid" alt="...">
@@ -477,7 +531,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-sm-12 col-xs-12 justify-content-center">
+                <div class="col col-sm-12 col-xs-6 col-xs-12 justify-content-center">
                     <div id="c3" class="card">
                         <div class="card-image-wrapper">
                             <img src="img/image 10.png" class="card-img-top img-fluid" alt="...">
@@ -493,13 +547,13 @@
             </div>
         </div>
     </section>
-    <footer class="text-center text-lg-start text-white" >
+    <footer class="text-center text-lg-start text-white">
         <!-- Section: Social media -->
-    
+
         <!-- Section: Social media -->
-    
+
         <!-- Section: Links  -->
-        <section >
+        <section>
             <div class="container text-center text-md-start mt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
@@ -515,7 +569,7 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-    
+
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
                         <!-- Links -->
@@ -538,14 +592,17 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-    
+
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-5">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold">Contact</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px" />
-                        <p><i class="fas fa-home mr-3"></i> <a class= "text-center" href="tel:(+91)90062328298">900 623 28298</a></p>
-                        <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:support@samayshakti.com" class= "text-center">support@samayshakti.com</a></p>
+                        <p><i class="fas fa-home mr-3"></i> <a class="text-white" href="tel:(+91)90062328298">900 623
+                                28298</a></p>
+                        <p><i class="fas fa-envelope mr-3"></i> <a class="text-white"
+                                href="mailto:support@samayshakti.com" class="text-center">support@samayshakti.com</a>
+                        </p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -553,7 +610,7 @@
             </div>
         </section>
         <!-- Section: Links  -->
-    
+
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © All Rights Reserved 2022
