@@ -1,15 +1,9 @@
-/* Demo Margin */
-/* .container{
-  margin-top: 40px;
-  margin-bottom: 40px;
-} */
-.container {
-    max-width: fit-content;
-}
-
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+/*    ##################################### NAVBAR AND HEADER  ######################################################*/
+
 
 .navbar {
     background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
@@ -38,6 +32,7 @@
 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
 }
+
 
 #nav img {
     height: 80px;
@@ -70,6 +65,13 @@ button.navbar-toggler {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+#search-icon {
+    color: #f24e1e;
+    font-size: 20px;
+    margin-right: 20px;
+    position: absolute;
 }
 
 .icons {
@@ -145,7 +147,7 @@ button.navbar-toggler {
     background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
 }
 
-/*  */
+
 
 ul {
     display: flex;
@@ -171,6 +173,11 @@ li a:hover {
     color: #BA1F21;
 }
 
+/*    ##################################### NAVBAR AND HEADER END  ######################################################*/
+
+
+/* ################### carousel #################### */
+
 #carouselExampleIndicators {
     margin-top: 30px;
     /* top: 203px; */
@@ -181,6 +188,10 @@ li a:hover {
     color: #111;
 }
 
+/* ######################## END ############################## */
+
+
+/*  */
 #heading h1 {
     font-size: 50px !important;
     font-weight: 700 !important;
@@ -238,6 +249,7 @@ li a:hover {
     opacity: 0.89;
     background-repeat: no-repeat;
 }
+
 #my-img2::before {
     content: "";
     position: absolute;
@@ -252,23 +264,26 @@ li a:hover {
 #my-img2 {
     position: relative;
     text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
-.container.text-center.text{
+
+.container.text-center.text {
     top: 50%;
     position: absolute;
     color: #C70000;
 }
+
 .h-primary {
     font-size: 3.5rem;
     padding-top: 20px;
     padding-bottom: 12px;
 }
+
 .h-1 {
     padding-bottom: 12px;
 }
@@ -289,7 +304,7 @@ h5 a {
     font-weight: 700;
 }
 
-/* This may not be needed depending on if you want to restrict the card size*/
+/* ######################### TOP SERVICES & PUJAN  SAMAGRI ########################## */
 #c1,
 #c2,
 #c3 {
@@ -310,46 +325,6 @@ h5 a {
     -webkit-transform: scale(1.1);
     /* Safari 3-8 */
     transform: scale(1.1);
-}
-
-.card-image-wrapper {
-    display: flex;
-    width: 100%;
-    height: 250px;
-    /* Just to show the size of the image wrapper */
-    /* background-color: darkgrey; */
-}
-
-.card-body {
-    text-align: center;
-}
-
-.owl-item {
-    width: 10rem;
-}
-
-.card-1 {
-    text-align: center;
-    width: 230px;
-    border: none;
-}
-
-
-.card-1 a:hover {
-    color: #BA1F21 !important;
-    text-decoration: underline;
-    line-height: 1px;
-}
-
-.cb {
-
-    text-align: center !important;
-}
-
-.container h5 {
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
 }
 
 .card-text {
@@ -375,6 +350,52 @@ h5 a {
     color: #BA1F21;
 }
 
+.container h5 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* ################# END ################## */
+.cb {
+
+    text-align: center !important;
+}
+
+/* ################## KUNDALI  & MUHURT */
+
+.card-body {
+    text-align: center;
+}
+
+.card-image-wrapper {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    /* Just to show the size of the image wrapper */
+    /* background-color: darkgrey; */
+}
+
+
+.owl-item {
+    width: 10rem;
+}
+
+.card-1 {
+    text-align: center;
+    width: 230px;
+    border: none;
+}
+
+
+.card-1 a:hover {
+    color: #BA1F21 !important;
+    text-decoration: underline;
+    line-height: 1px;
+}
+
+
+
 .card-img-top {
     padding: 25px;
     display: block;
@@ -387,6 +408,7 @@ a:hover {
     color: #BA1F21;
 }
 
+/*  FFOOTER */
 footer {
     margin-top: 40px;
     background-color: #BA1F21;
@@ -404,12 +426,7 @@ p a:hover {
     margin-top: 60px;
 }
 
-
-
-
-
-
-
+/* ############# FOOTER END ######### */
 .home-demo .item {
     background: #ff3f4d;
     flex: 1 1 100px;
@@ -432,14 +449,17 @@ ol {
     text-align: initial;
     line-height: 3rem;
 }
-.ol1 li{
+
+.ol1 li {
     color: #BA1F21;
     font-weight: 900;
 }
-.ol2 li{
+
+.ol2 li {
     color: #BA1F21;
 }
 
+/* ####################### MEDIA QUERIES  ######################### */
 
 
 @media (min-width: 601px) {
@@ -457,38 +477,43 @@ ol {
     #bla {
         width: 110px !important;
     }
-  .container.text-center.text {
-      top: 40%;
-  }
-   .container.text-center.text .h-1{
-       font-size: 0.8rem !important;
-   }
-   .container.text-center.text p{
-       font-size: 0.4rem;
-   }
-   .h-primary {
-       font-size: 1.2rem !important;
-   }
+
+    .container.text-center.text {
+        top: 40%;
+    }
+
+    .container.text-center.text .h-1 {
+        font-size: 0.8rem !important;
+    }
+
+    .container.text-center.text p {
+        font-size: 0.4rem;
+    }
+
+    .h-primary {
+        font-size: 1.2rem !important;
+    }
 
 }
 
-@media (min-width:425px ) and (max-width:900px) {
+@media (min-width:425px) and (max-width:900px) {
 
     .container.text-center.text .h-1 {
-            font-size: 1rem !important;
-            font-weight: bolder !important;
-            padding-bottom: 10px;
-        }
-    
-        .container.text-center.text p {
-            font-size: 0.5rem;
-            /* font-weight: bolder !important; */
-        }
-    
-        .h-primary {
-            font-size: 1.6rem !important;
-        }
-    hr{
+        font-size: 1rem !important;
+        font-weight: bolder !important;
+        padding-bottom: 10px;
+    }
+
+    .container.text-center.text p {
+        font-size: 0.5rem;
+        /* font-weight: bolder !important; */
+    }
+
+    .h-primary {
+        font-size: 1.6rem !important;
+    }
+
+    hr {
         width: 10rem;
         height: 3px !important;
     }
@@ -721,39 +746,9 @@ ol {
     .icons {
         width: 70px;
     }
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* EXTRAS */
 
 
 
@@ -777,6 +772,3 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
-
-
-

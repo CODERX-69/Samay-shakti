@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,52 +32,29 @@
         <div class="container-fluid">
             <img src="img/image 1.png" alt="">
             <div id="searchbar">
-                <input class="form-control me-2" id="bla" type="search" placeholder="Search" aria-label="Search" data-search>
+                <input class="form-control me-2" id="bla" type="search" placeholder="Search" aria-label="Search"
+                    data-search>
+                    
                 <span class="iconify" id="search-icon" data-icon="akar-icons:search"></span>
             </div>
-            <span id="profile">Welcome :
-                Name</span>
-            <div class="icons">
-                <span onclick="menuToggle(); document.getElementById('drpdwn').style.display = 'block'"  class="iconify" id="clickable"  data-icon="gg:profile">
+            <div class="auth-container" style="gap:1rem;">
+                <a href="register.html" class="btn auth" style=>Register</a>
+                <a href="login.html" class="btn auth">Login</a>
+                <span onclick="menuToggle(); document.getElementById('drpdwn').style.display = 'block'" class="iconify" id="clickable"
+                    data-icon="gg:profile">
                 </span>
                 <div class="pro-menu" id="drpdwn">
                     <ul class="pro-list">
-                        <li class="pro-items"><a href="">My Profile</a></li>
-                        <li class="pro-items"><a href="">My Orders</a></li>
-                        <li class="pro-items"><a href="">Track Orders</a></li>
-                        <li class="pro-items"><a href="">My Address</a></li>
-                        <li class="pro-items"><a href="landing.html">Logout</a></li>
+                        <li class="pro-items"><a href="register.html">Register</a></li>
+                        <li class="pro-items"><a href="login.html">Login</a></li>
                     </ul>
                 </div>
-                <span class="iconify" data-icon="bxs:cart-alt"></span>
+                <span class="iconify" data-icon="bx:cart-alt"></span>
             </div>
         </div>
     </nav>
     <section class="header">
-        <!-- <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid" id="menu">
-                <a class="navbar-brand d-none " href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="text-align:end;">Icon</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto mx-auto ">
-                        <a class="nav-link" href="#">Kundali</a>
-                        <a class="nav-link" href="#">Vastu</a>
-                        <a class="nav-link" href="#">Muhurt</a>
-                        <a class="nav-link" href="#">Pujan samagri</a>
-                        <a class="nav-link" href="#">Problem Solution</a>
-                        <a class="nav-link" href="#">Vrat & Tyauhaar</a>
-                        <a class="nav-link" href="#">Ask Question</a>
-                        <a class="nav-link" href="#">Appointment</a>
-                        <a class="nav-link" href="#">Bhajan</a>
-                        <a class="nav-link" href="#">Other Service</a>
-                    </div>
-                </div>
-            </div>
-        </nav> -->
+
         <nav class="navbar navbar-expand-lg mt-3">
             <div class="container-fluid" id="menu">
                 <a class="navbar-brand d-none" href="#">Home</a>
@@ -122,20 +100,7 @@
             </div>
         </nav>
     </section>
-    <!-- <div class="conatiner-fluid" id='menu'>
-        <ul>
-            <li><a href="">Kundali</a></li>
-            <li><a href="">Vastu</a></li>
-            <li><a href="">Muhurt</a></li>
-            <li><a href="">Pujan samagri</a></li>
-            <li><a href="">Problem Solution</a></li>
-            <li><a href="">Vrat & Tyauhaar</a></li>
-            <li><a href="">Ask Question</a></li>
-            <li><a href="">Appointment</a></li>
-            <li><a href="">Bhajan</a></li>
-            <li><a href="">Other Service</a></li>
-        </ul>
-    </div> -->
+
     <section id="home">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators" style="visibility: hidden;">
@@ -271,13 +236,13 @@
         </div>
         <section id="my-img">
             <img src="img/Group 13.png" alt="" style="width: 100%;">
-            <div class="container text-center book-text" > 
+            <!-- <div class="container text-center book-text">
                 <div class="row" id="panchang">
-                    
+
                     <div class="col d-flex justify-content-end">
                         <ol class="ol1">
                             <li> विक्रमी सम्बत् </li>
-                           <li> विक्रमी सम्बतांक </li>
+                            <li> विक्रमी सम्बतांक </li>
                             <li> शकः सम्बतांक </li>
                             <li> अयनार्क </li>
                             <li> गोलर्क </li>
@@ -299,7 +264,7 @@
                     </div>
                     <div class="col d-flex justify-content-end">
                         <ol class="ol1">
-                            <li> विक्रमी सम्बत्  </li>
+                            <li> विक्रमी सम्बत् </li>
                             <li> विक्रमी सम्बतांक </li>
                             <li> शकः सम्बतांक</li>
                             <li> अयनार्क </li>
@@ -320,13 +285,13 @@
                         </ol>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section id="my-img2">
             <img src="img/Group 14.png" alt="" style="width: 100%;">
             <div class="container text-center text">
                 <h1 class="h-1"><b>!! आज का व्रत त्योहार !!</b></h1>
-                <hr>
+                <!-- <hr> -->
                 <h1 class="h-primary"><strong>योगिनी एकादशी व्रत</strong></h1>
                 <p><b>द्रष्टव्य : इस व्रत के प्रभाव से कुष्ठ (कोढ़) रोगादि का नाश होता है ।</b> </p>
             </div>
