@@ -218,13 +218,18 @@ li a:hover {
     #clickable {
         display: none;
     }
-    #auth.container{
+
+    .pro-menu.active {
+        display: none !important;
+    }
+
+    #auth.container {
         display: block;
     }
 }
 
 @media (max-width:425px) {
-    .auth-container a {
+    .auth-container .btn {
         display: none;
     }
 
@@ -236,6 +241,10 @@ li a:hover {
         justify-items: center;
     }
 
+    .pro-menu {
+        top: 70px !important;
+        right: 10px !important;
+    }
 
 }
 
@@ -253,3 +262,16 @@ li a:hover {
 
 
 /* create account page */
+
+#create_new{
+    height: 88px;
+    width: 100%;
+    margin-top: 10px;
+}
+@media (max-width:353px) {
+    
+    #create_new{
+        height: 60px;
+        margin-top: 10px;
+    }
+}

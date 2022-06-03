@@ -1,6 +1,7 @@
 
 // owl carousel responsiveness
 $('.owl-carousel').owlCarousel({
+    autoplayHoverPause: true,
     loop: true,
     margin: 10,
     autoWidth: true,

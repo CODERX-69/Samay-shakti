@@ -484,8 +484,7 @@ ol {
 #cb-1 button,
 #cb-2 button,
 #cb-3 button,
-#cb-4 button
-{
+#cb-4 button {
     font-size: x-small;
     width: 100px !important;
     background: #FFFFFF;
@@ -497,31 +496,104 @@ ol {
 #cb-1 button:hover,
 #cb-2 button:hover,
 #cb-3 button:hover,
-#cb-4 button:hover
- {
+#cb-4 button:hover {
     color: #BA1F21;
 }
 
 @media (max-width:460px) {
+
     #cb-1 button,
-        #cb-2 button,
-        #cb-3 button,
-        #cb-4 button {
-            font-size: 8px;
-            width: 90px !important;
-            background: #FFFFFF;
-            border-radius: 56.3333px;
-            border: none;
-            color: #F17738;
-        }
+    #cb-2 button,
+    #cb-3 button,
+    #cb-4 button {
+        font-size: 8px;
+        width: 90px !important;
+        background: #FFFFFF;
+        border-radius: 56.3333px;
+        border: none;
+        color: #F17738;
+    }
+
     #cb-1 p,
-        #cb-2 p,
-        #cb-3 p,
-        #cb-4 p {
-            font-size: small;
-        }
-    #product h4{
+    #cb-2 p,
+    #cb-3 p,
+    #cb-4 p {
+        font-size: small;
+    }
+
+    #product h4 {
         font-size: 16px !important;
+    }
+}
+
+
+/* Kundali vishleshan */
+.container.kundali-vish {
+    height: auto;
+    width: 70%;
+    /* border: 1px solid black; */
+    background: #FFFFFF;
+    box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 8px 8px;
+    /* margin-top: 50px; */
+    padding: 0;
+}
+
+#kundali_vish {
+    width: 70%;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(180deg, #FACA66 0%, #F17738 100%);
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 5px;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+#kundali-form {
+    row-gap: 3rem;
+    background: #FFFFFF;
+    /* Light shadow Y-2 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px !important;
+    padding: 5rem 3rem;
+}
+
+#cb1 ul,
+#cb3 ul {
+    list-style: disc;
+}
+
+#cb1 li,
+#cb3 li {
+    color: white;
+    line-height: 35px;
+}
+
+#login-btn{
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+        letter-spacing: 1.5px;
+        width: 18rem;
+        color: white !important;
+        border: none;
+}
+
+@media (max-width:840px) {
+
+    #cb1 li,
+    #cb3 li {
+        font-size: small;
+        line-height: 25px;
+    }
+
+    #kundali-container #kundali-card button {
+        width: 90% !important;
+        font-size: x-small;
+    }
+    .card-image-wrapper{
+        height: 150px !important;
     }
 }
 
