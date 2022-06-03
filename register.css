@@ -248,12 +248,12 @@ input::placeholder {
     color: rgba(0, 0, 0, 0.67);
 }
 
-.btn {
+/* .btn {
     background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
     letter-spacing: 1.5px;
     width: 18rem;
     color: white !important;
-}
+} */
 
 
 .otp a {

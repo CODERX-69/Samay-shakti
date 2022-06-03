@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="register.css">
+    
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,25 +37,22 @@
             <div id="searchbar">
                 <input class="form-control me-2" id="bla" type="search" placeholder="Search" aria-label="Search"
                     data-search>
-                <span class="iconify" data-icon="akar-icons:search"
-                    style="color: #f24e1e; font-size: 20px; margin-right: 20px; position: absolute;"></span>
+    
+                <span class="iconify" id="search-icon" data-icon="akar-icons:search"></span>
             </div>
-            <span id="profile">Welcome :
-                Name</span>
-            <div class="icons">
+            <div class="auth-container" style="gap:1rem;">
+                <a href="register.html" id="btn1" class="btn auth" style=>Register</a>
+                <a href="login.html"  id="btn2" class="btn auth">Login</a>
                 <span onclick="menuToggle(); document.getElementById('drpdwn').style.display = 'block'" class="iconify"
                     id="clickable" data-icon="gg:profile">
                 </span>
                 <div class="pro-menu" id="drpdwn">
                     <ul class="pro-list">
-                        <li class="pro-items"><a href="">My Profile</a></li>
-                        <li class="pro-items"><a href="">My Orders</a></li>
-                        <li class="pro-items"><a href="">Track Orders</a></li>
-                        <li class="pro-items"><a href="">My Address</a></li>
-                        <li class="pro-items"><a href="register.html">Logout</a></li>
+                        <li class="pro-items"><a href="register.html">Register</a></li>
+                        <li class="pro-items"><a href="login.html">Login</a></li>
                     </ul>
                 </div>
-                <span class="iconify" data-icon="bxs:cart-alt"></span>
+                <span class="iconify" data-icon="bx:cart-alt"></span>
             </div>
         </div>
     </nav>
@@ -124,7 +124,7 @@
                                     data-previous="digit-3" />
                             </div>
                             <div class="d-grid mt-5 mb-5 justify-content-center">
-                                <button class="btn text-white btn-login fw-bold ms-auto" type="submit">Login</button>
+                                <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto" type="submit">Login</button>
                             </div>
                         </form>
                     </div>

@@ -1,0 +1,162 @@
+/* ################# LOGIN FORM ######################### */
+
+.card {
+    box-shadow: 0px 1.78529px 4.46324px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8.92647px !important;
+    border: none !important;
+}
+
+.card-title {
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.card-body h1 {
+    height: 50px;
+}
+
+#formLabel1,#formLabel2 {
+    text-align:start !important;
+}
+
+.form-control {
+    height: 43px !important;
+    border: 0.892647px solid #EBEBEB;
+    box-shadow: 0px 1.78529px 4.46324px rgba(0, 0, 0, 0.1);
+}
+
+#formCheck {
+    display: flex !important;
+    justify-content: start;
+
+}
+
+#form-check1 {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.form-check a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+}
+
+.form-check a:hover {
+    text-decoration: underline !important;
+}
+
+input::placeholder {
+    color: #555555;
+    opacity: .25 !important;
+}
+
+
+.form-check-label {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.67);
+    text-align: center;
+}
+
+#login-btn {
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+    letter-spacing: 1.5px;
+    width: 18rem;
+    color: white !important;
+    border: none;
+}
+
+
+.otp a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+span a {
+    text-decoration: none;
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+span a:hover {
+    text-decoration: underline !important;
+}
+
+/* ################# OTP PAGE #################### */
+
+
+.otp-number {
+    display: grid !important;
+    grid-template-columns: 40px 40px 40px 40px;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.otp-number input {
+    text-align: center;
+}
+
+input {
+    background: #FFFFFF;
+    border: 0.892647px solid #EBEBEB !important;
+    box-shadow: 0px 1.78529px 4.46324px rgba(0, 0, 0, 0.2);
+}
+
+.otp-number input {
+    height: 43px;
+    background: #FFFFFF;
+    border: 0.892647px solid #EBEBEB;
+    box-shadow: 0px 1.78529px 4.46324px rgba(0, 0, 0, 0.2);
+}
+
+/* ##########END################ */
+
+/* #################### MODAL CSS ######################### */
+
+.modal-content {
+    background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
+}
+
+.btn.reset {
+    background: white !important;
+    color: #F27D3C !important;
+
+}
+
+.modal-body input {
+    width: 90% !important;
+}
+
+.modal-header,
+.modal-footer {
+    border: none !important;
+}
+
+.modal-footer a {
+    text-decoration: none;
+    color: #F27D3C;
+}
+
+/* #################### MODAL CSS  END ######################### */
