@@ -669,7 +669,20 @@ input[type=radio] {
 }
 
 /* END */
+/* Vastu products */
+#price {
+    color: #F27D3C;
+    width: 10rem;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
 
+/* End */
 /* ####################### MEDIA QUERIES  ######################### */
 
 
