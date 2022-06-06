@@ -103,56 +103,132 @@
     </section>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                <!-- <div class="card my-5"> -->
+        <div class="row justify-content-around">
+            <div class="col-sm-12 col-md-5 col-lg-5 ">
+                <div class="card my-5">
                     <div class="card-body p-4 p-sm-5">
-                        <h1 class="card-title text-center mb-5 fw-bold fs-1" id="create_new">Create New Account</h1>
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputName1" class="form-label" id="formLabel1">Full Name <span
-                                        style="color:red;">*</span></label>
-                                <input type="text" class="form-control" id="exampleInputName1" placeholder="Full Name">
+                        <h2 class="card-title text-center mb-5 fw-bold fs-2">Saved Address</h2>
+                        <div class="card mb-3">
+                            <div class="card-body ">
+                                <div class="d-flex justify-content-between">
+                                    <div class="align-items-center">
+                                        <h5>Riya Kumari <span id="adress-type" class="ms-3 fs-6">HOME
+                                    </div>
+                                    </span> </h5>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal3"><span class="iconify" data-icon="iwwa:option"></span></a>
+                                </div> <br>
+                                <p>House no, 001, Street no - 2, New Street Road, City, State, Pincode</p>
+                                <p><b>987654321</b></p>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputNumber1" class="form-label" id="formLabel2">Phone Number <span
-                                        style="color:red;">*</span></label>
-                                <input type="tel" class="form-control" id="exampleInputNumber1"
-                                    placeholder="Phone Number">
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body ">
+                                <div class="d-flex justify-content-between">
+                                    <div class="align-items-center">
+                                        <h5>Riya Kumari <span id="adress-type" class="ms-3 fs-6">HOME
+                                    </div>
+                                    </span> </h5>
+                                    <span class="iconify" data-icon="iwwa:option"></span></span>
+                                </div> <br>
+                                <p>House no, 001, Street no - 2, New Street Road, City, State, Pincode</p>
+                                <p><b>987654321</b></p>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label" id="formLabel3">Email address <span
-                                        style="color:red;">*</span></label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body ">
+                                <div class="d-flex justify-content-between">
+                                    <div class="align-items-center">
+                                        <h5>Riya Kumari <span id="adress-type" class="ms-3 fs-6">HOME
+                                    </div>
+                                    </span> </h5>
+                                    <span class="iconify" data-icon="iwwa:option"></span></span>
+                                </div><br>
+                                <p>House no, 001, Street no - 2, New Street Road, City, State, Pincode</p>
+                                <p><b>987654321</b></p>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label" id="formLabel4">Password <span
-                                        style="color:red;">*</span></label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Password">
-                            </div>
-                            <div id="form-check1" class="form-check mb-3">
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                                    <label class="form-check-label" for="rememberPasswordCheck">
-                                        Show password
-                                    </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-5 ">
+                <div class="card my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h2 class="card-title text-center mb-5 fw-bold fs-2">Add New Address</h2>
+                        <form action="" class="address-form">
+                            <div class="row g-3">
+                                <div class="col-sm-6 ">
+                                    <label for="Zip" class="form-label" id="formLabel3">Zip<span
+                                            style="color:red;">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="" class="form-label" id="formLabel3">Location</label>
+                                    <button id="location-btn"><span class="iconify" data-icon="akar-icons:location"
+                                            style="color: white;"></span> Use my location</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="Zip" class="form-label" id="formLabel3">State<span
+                                            style="color:red;">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option class="select" selected></option>
+                                        <option value="1">Bihar</option>
+                                        <option value="2">Maharashtra</option>
+                                        <option value="3">Gujrat</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="Zip" class="form-label" id="formLabel3">City<span
+                                            style="color:red;">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option class="select" selected></option>
+                                        <option value="1">Bihar</option>
+                                        <option value="2">Maharashtra</option>
+                                        <option value="3">Gujrat</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="Zip" class="form-label" id="formLabel3">Road, Area, Colony<span style="color:red
+                                (255, 0, 0, 0.7);">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Road, Area, Colony*"
+                                        aria-label="Road, Area, Colony*">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="Zip" class="form-label" id="formLabel3">House No., Building<span
+                                            style="color:red;">*</span></label>
+                                    <input type="text" class="form-control" placeholder="House No., Building*"
+                                        aria-label="House No., Building*">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="Zip" class="form-label" id="formLabel3">Land Mark<span
+                                            style="color:red;">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Land Mark*"
+                                        aria-label="Land Mark*">
                                 </div>
                             </div>
-                            <div class="d-grid mt-5 mb-5 justify-content-center">
-                                <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto"
-                                    type="submit"><a href="login.html" class="text-white" style="text-decoration:none;">Create</a> </button>
-                            </div>
                         </form>
-                        <!-- <div class="d-flex justify-content-center mt-4">
-                            <span>Don't have an account? <a href="">Register</a></span>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--  MODAL -->
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body d-flex flex-column">
+                <button class="edit text-start">Edit</button>
+                <hr class="pb-0 pt-0">
+                <button class="remove text-start">Edit</button>
+                <hr >
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal END -->
     <footer class="text-center text-lg-start text-white">
         <!-- Section: Social media -->
 

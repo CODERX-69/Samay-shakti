@@ -347,9 +347,9 @@ input {
         font-size: 14px !important;
     }
 
-    .iconify {
+    /* .iconify {
         font-size: 16px !important;
-    }
+    } */
 }
 
 @media (max-width:412px) {

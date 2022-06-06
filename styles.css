@@ -103,7 +103,7 @@ button.navbar-toggler {
     height: 46px;
 
     background: #FFFFFF;
-    border: 1px solid #F49736;
+    border: 1px solid #F49736 !important;
     border-radius: 100px;
 
     /* Inside auto layout */
@@ -560,18 +560,8 @@ ol {
     padding: 0;
 }
 
-#kundali_vish {
-    width: 70%;
-    line-height: 60px;
-    font-weight: 700;
-    text-align: center;
-    background: linear-gradient(180deg, #FACA66 0%, #F17738 100%);
-    margin-top: 30px;
-    margin-bottom: 0px;
-    padding: 5px;
-    color: white;
-    border-radius: 8px 8px 0 0;
-}
+
+
 #vastu-que{
     width: 100%;
     line-height: 60px;
@@ -585,7 +575,7 @@ ol {
     border-radius: 8px 8px 0 0;
 }
 
-#kundali-form {
+#kundali-form, #muhurt-form {
     row-gap: 3rem;
     background: #FFFFFF;
     /* Light shadow Y-2 */
@@ -613,6 +603,7 @@ ol {
     border: none;
 }
 
+
 @media (max-width:840px) {
 
     #cb1 li,
@@ -632,7 +623,52 @@ ol {
 }
 
 /* ################# KUNDALI PAGE END ###################### */
+/* #################### MUHURT PAGE ######################## */
 
+input[type=radio] {
+    width: 2rem !important;
+    height: 2rem !important;
+}
+.form-check-label{
+
+   font-size: 1rem !important;
+}
+
+#muhurt-type {
+    width: 70%;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(180deg, #FACA66 0%, #F17738 100%);
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 5px;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+
+/* #################### MUHURT PAGE END ######################## */
+
+/* Pujan Samagri */
+
+#pujan-products{
+    color: white !important;
+}
+#pujan_samagri{
+    width: 100%;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(180deg, #FACA66 0%, #F17738 100%);
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 5px;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+/* END */
 
 /* ####################### MEDIA QUERIES  ######################### */
 
