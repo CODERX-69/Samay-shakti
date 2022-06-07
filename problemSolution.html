@@ -77,7 +77,7 @@
                             <a class="nav-link" href="pujanSamagri.html">Pujan samagri</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Problem Solution</a>
+                            <a class="nav-link active" href="problemSolution.html">Problem Solution</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Vrat & Tyauhaar</a>
@@ -86,7 +86,7 @@
                             <a class="nav-link" href="#">Ask Question</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Appointment</a>
+                            <a class="nav-link" href="book-appointment.html">Appointment</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Bhajan</a>
@@ -106,26 +106,79 @@
             <img src="img/image 3.png" class="d-block w-100" alt="...">
         </div>
     </section>
+            <div class="container ">
+                <div class="container d-flex justify-content-evenly" id="kundali-card">
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 gy-5 mt-2 w-100">
+                        <div class="col d-flex col-sm-6 col-xs-12 col-md-3 justify-content-center pb-2">
+                            <div id="c1" class="card h-100">
+                                <div class="card-image-wrapper">
+                                    <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                                </div>
+                                <div id="cb-1" class="card-body pt-0 ">
+                                    <p class="text-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                    <button href="#" id="prdct-btn1" class="btn ">View More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex col-sm-6 col-xs-12 col-md-3 pb-2 justify-content-center">
+                            <div id="c3" class="card h-100">
+                                <div class="card-image-wrapper">
+                                    <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                                </div>
+                                <div id="cb-3" class="card-body pt-0">
+                                    <p class="text-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                    <button href="#" id="prdct-btn1" class="btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex col-sm-6 col-xs-12 col-md-3 pb-2 justify-content-center">
+                            <div id="c3" class="card h-100">
+                                <div class="card-image-wrapper">
+                                    <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                                </div>
+                                <div id="cb-3" class="card-body pt-0">
+                                    <p class="text-align-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                    <button href="#" id="prdct-btn1" class="btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex col-sm-6 col-xs-12 col-md-3 pb-2 justify-content-center">
+                            <div id="c3" class="card h-100">
+                                <div class="card-image-wrapper">
+                                    <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                                </div>
+                                <div id="cb-3" class="card-body pt-0">
+                                    <p class="text-align-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                    <button href="#" id="prdct-btn1" class="btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <div class="container">
         <h2 id="kundali_vish" class="mx-auto">Ask One Vastu Question at Just ₹ 99</h2>
         <div class="container kundali-vish px-5 py-4" id="kundali-container">
             <div class="container " id="kundali-form">
-                <form class="row g-5">
+                <div class="d-flex justify-content-center align-items-center flex-wrap ">
+                    <h6 class="mt-0 mb-0"><b>क्या आपको आपका जनम विवरण (Birth Details) पता है?</b></h6>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-sm btn-default">हाँ</button>
+                        <button class="btn btn-sm btn-orange active">नहीं</button>
+                    </div>
+                </div>
+                <form class="row g-5 mt-3">
                     <div class="col-md-6">
                         <label for="inputName" class="form-label">नाम (Name)</label>
                         <input type="text" class="form-control" id="inputName" placeholder="नाम (Name)">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputTime" class="form-label">जन्मसमय Birth Time</label>
-                        <input type="time" class="form-control" id="inputTime" placeholder="जन्मसमय Birth Time">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">जन्म तिथि</label>
+                        <label for="inputEmail4" class="form-label">जन्म तिथि (Date Of Birth</label>
                         <input type="date" class="form-control" id="inputEmail4" placeholder="जन्म तिथि">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputPlace" class="form-label">जन्म स्थान</label>
-                        <input type="text" class="form-control" id="inputPlace" placeholder="जन्म स्थान">
+                        <label for="inputTime" class="form-label">जन्मसमय (Birth Time)</label>
+                        <input type="time" class="form-control" id="inputTime" placeholder="जन्मसमय Birth Time">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPlace" class="form-label">लिंग (Gender)</label>
@@ -135,6 +188,10 @@
                             <option value="2">Female</option>
                             <option value="3">Other</option>
                         </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPlace" class="form-label">जन्म स्थान (Birth Place)</label>
+                        <input type="text" class="form-control" id="inputPlace" placeholder="जन्म स्थान">
                     </div>
                     <label for="inputPlace" class="form-label">आपकी फोटो (Your Image)</label>
                     <div class="input-group col-md-12 mt-0">
@@ -155,103 +212,63 @@
                     </div>
                 </form>
             </div>
-            <h1 class="text-center mt-5"><b>Vastu Pack</b></h1>
-            <div class="container d-flex justify-content-evenly" id="kundali-card">
-                <div class="row  row-cols-sm-2 row-cols-md-2 gy-5 mt-2 w-100">
-                    <div class="col d-flex col-sm-6 col-xs-12 justify-content-center pb-2">
-                        <div id="c1" class="card h-100">
-                            <div class="card-image-wrapper">
-                                <img src="img/image 21.png" class="card-img-top img-fluid" alt="...">
-                            </div>
-                            <div id="cb1" class="card-body pt-0 h-auto">
-                                <ul class="d-inline text-start">
-                                    <li>Ask Unlimited questions related to your entire house.</li>
-                                    <li>20 mins video call With Vastu Expert.</li>
-                                    <li>15 Days chat support with Vastu Expert</li>
-                                    <li>Vastu Dosh Solution</li>
-                                </ul>
-                                <!-- <h5 class="card-title">Kundali Vishleshan</h5> -->
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p> -->
-                                <button href="#" class="btn ">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-flex col-sm-6 col-xs-12 pb-2 justify-content-center">
-                        <div id="c3" class="card h-100">
-                            <div class="card-image-wrapper">
-                                <img src="img/image 20.png" class="card-img-top img-fluid" alt="...">
-                            </div>
-                            <div id="cb3" class="card-body pt-0">
-                                <ul class="d-inline text-start">
-                                    <li>Ask Unlimited questions related to your entire house.</li>
-                                    <li>20 mins video call With Vastu Expert.</li>
-                                    <li>15 Days chat support with Vastu Expert</li>
-                                    <li>Vastu Dosh Solution</li>
-                                </ul>
-                                <button href="#" class="btn">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="heading" class="text-center">
-                <h2><b> See Our vastu Services </b></h2>
-            </div>
-            <h3 id="vastu-que" class="mx-auto">Vastu Products</h3>
-            <div class="container " id="kundali-form">
-                <div class="container d-flex justify-content-evenly" id="kundali-card">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 gy-5 mt-2 w-100">
-                        <div class="col d-flex col-sm-6 col-xs-12 col-md-4 justify-content-center pb-2">
-                            <div id="c1" class="card h-100">
-                                <div class="card-image-wrapper">
-                                    <img src="img/vastu image 1.png" class="card-img-top img-fluid" alt="...">
-                                </div>
-                                <div id="cb1" class="card-body pt-0 ">
-                                    <p class="text-left text-white">घर में पूजा घर किस दिशा में होना चाहिए? In which
-                                        direction should the house of worship be?</p>
-                                    <button href="#" class="btn">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-flex col-sm-6 col-xs-12 col-md-4 pb-2 justify-content-center">
-                            <div id="c3" class="card h-100">
-                                <div class="card-image-wrapper">
-                                    <img src="img/vastu image 2.png" class="card-img-top img-fluid" alt="...">
-                                </div>
-                                <div id="cb3" class="card-body pt-0">
-                                    <p class="text-left text-white">घर में रसोई घर किस दिशा में होना चाहिए? In which
-                                        direction should the Kitchen be?</p>
-                                    <button href="#" class="btn">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-flex col-sm-6 col-xs-12 col-md-4 pb-2 justify-content-center">
-                            <div id="c3" class="card h-100">
-                                <div class="card-image-wrapper">
-                                    <img src="img/vastu image 3.png" class="card-img-top img-fluid" alt="...">
-                                </div>
-                                <div id="cb3" class="card-body pt-0">
-                                    <p class="text-align-left text-white">घर का रंग कैसा होना चाहिए? What should be the
-                                        color of the house?</p>
-                                    <button href="#" class="btn">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-grid mt-5 mb-5 justify-content-center">
-                <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto" type="submit"><a href=""
-                        class="text-white" style="color:white !important;">View All </a></button>
-            </div>
         </div>
     </div>
-    </div>
+    <section id="product-sol-banner" class="mt-5">
+        <div class="mt-4">
+            <img src="img/image 3.png" class="d-block w-100" alt="...">
+        </div>
+    </section>
+        <div class="container ">
+            <div class="container d-flex justify-content-evenly" id="kundali-card">
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 gy-5 mt-2 w-100">
+                    <div class="col d-flex col-sm-6 col-xs-12 col-md-3 justify-content-center pb-2">
+                        <div id="c1" class="card h-100">
+                            <div class="card-image-wrapper">
+                                <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div id="cb-1" class="card-body pt-0 ">
+                                <p class="text-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                <button href="#" id="prdct-btn1" class="btn ">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex col-sm-6 col-xs-12 col-md-3 pb-2 justify-content-center">
+                        <div id="c3" class="card h-100">
+                            <div class="card-image-wrapper">
+                                <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div id="cb-3" class="card-body pt-0">
+                                <p class="text-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                <button href="#" id="prdct-btn1" class="btn">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex col-sm-6 col-xs-12 col-md-3 pb-2 justify-content-center">
+                        <div id="c3" class="card h-100">
+                            <div class="card-image-wrapper">
+                                <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div id="cb-3" class="card-body pt-0">
+                                <p class="text-align-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                <button href="#" id="prdct-btn1" class="btn">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex col-sm-6 col-xs-12 col-md-3 pb-2 justify-content-center">
+                        <div id="c3" class="card h-100">
+                            <div class="card-image-wrapper">
+                                <img src="img/image 23.png" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div id="cb-3" class="card-body pt-0">
+                                <p class="text-align-left text-white"><b>विवाह में विलम्भ क्यों हो रही है?</b></p>
+                                <button href="#" id="prdct-btn1" class="btn">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <footer class="text-center text-lg-start text-white">
         <section>
             <div class="row d-flex flex-row gx-0 pt-4">

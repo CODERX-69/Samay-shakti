@@ -12,6 +12,21 @@
     line-height: 1px;
 }
 
+/* form  */
+.form-control,
+.form-select,
+.form-check {
+    height: 43px !important;
+    border: 0.892647px solid #EBEBEB !important;
+    box-shadow: 0px 1.78529px 4.46324px rgba(0, 0, 0, 0.1);
+}
+
+input[type=file] {
+    height: auto !important;
+}
+
+/* form end */
+
 /*    ##################################### NAVBAR AND HEADER  ######################################################*/
 
 
@@ -320,7 +335,6 @@ h5 a {
 #c3,
 #c4 {
     border: none;
-    height: 450px;
     border-radius: 20px !important;
     background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
     max-width: 380px;
@@ -339,7 +353,8 @@ h5 a {
 
 #cb1,
 #cb2,
-#cb3 {
+#cb3,
+#cb4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -350,7 +365,8 @@ h5 a {
 
 #cb1 button,
 #cb2 button,
-#cb3 button {
+#cb3 button,
+#cb4 button {
     width: 154px !important;
     background: #FFFFFF;
     border-radius: 56.3333px;
@@ -362,7 +378,8 @@ h5 a {
 
 #cb1 button:hover,
 #cb2 button:hover,
-#cb3 button:hover {
+#cb3 button:hover,
+#cb4 button:hover {
     color: #BA1F21;
 }
 
@@ -473,7 +490,8 @@ p a:hover {
         border: none;
         width: auto;
     }
-    #footer-1{
+
+    #footer-1 {
         padding-right: 0px;
         border: none;
     }
@@ -516,8 +534,34 @@ ol {
     color: #BA1F21;
 }
 
+/* IndexPage */
 
+#prdct-btn9 {
+    width: auto !important;
+    padding: 5px 20px;
+    font-size: medium !important;
+}
+
+@media (max-width:326px) {
+    #prdct-btn9 {
+        font-size: small !important;
+    }
+}
+
+/* End */
 /* ################# KUNDALI PAGE ###################### */
+#prdct-btn1,
+#prdct-btn2,
+#prdct-btn3,
+#prdct-btn4,
+#prdct-btn5,
+#prdct-btn6,
+#prdct-btn7,
+#prdct-btn8 {
+    width: auto !important;
+    padding: 5px 10px;
+    font-size: small !important;
+}
 
 #cb-1,
 #cb-2,
@@ -534,8 +578,7 @@ ol {
 #cb-2 button,
 #cb-3 button,
 #cb-4 button {
-    font-size: x-small;
-    width: 100px !important;
+    font-size: medium;
     background: #FFFFFF;
     border-radius: 56.3333px;
     border: none;
@@ -570,7 +613,6 @@ ol {
     #cb-3 button,
     #cb-4 button {
         font-size: 8px;
-        width: 90px !important;
         background: #FFFFFF;
         border-radius: 56.3333px;
         border: none;
@@ -587,14 +629,17 @@ ol {
     #product h4 {
         font-size: 16px !important;
     }
+
+    #login-btn {
+        width: 10rem !important;
+    }
 }
 
 
 /* Kundali vishleshan */
+
 .container.kundali-vish {
     height: auto;
-    width: 70%;
-    /* border: 1px solid black; */
     background: #FFFFFF;
     box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 8px 8px;
@@ -605,7 +650,6 @@ ol {
 
 
 #kundali_vish {
-    width: 100%;
     line-height: 60px;
     font-weight: 700;
     text-align: center;
@@ -637,7 +681,7 @@ ol {
     /* Light shadow Y-2 */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px !important;
-    padding: 5rem 3rem;
+    padding: 5rem 1.3rem;
 }
 
 #cb1 ul,
@@ -654,7 +698,8 @@ ol {
 #login-btn {
     background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
     letter-spacing: 1.5px;
-    width: 18rem;
+    width: 15rem;
+    /* padding: 8px 50px !important; */
     color: white !important;
     border: none;
 }
@@ -686,8 +731,18 @@ input[type=radio] {
     height: 2rem !important;
 }
 
-.form-check-label {
+@media (max-width:480px) {
+    input[type=radio] {
+        width: 1rem !important;
+        height: 1rem !important;
+    }
 
+    .form-check-label {
+        font-size: 0.8rem !important;
+    }
+}
+
+.form-check-label {
     font-size: 1rem !important;
 }
 
@@ -714,7 +769,7 @@ input[type=radio] {
 }
 
 #pujan_samagri {
-    width: 100%;
+    /* width: 100%; */
     line-height: 60px;
     font-weight: 700;
     text-align: center;
@@ -735,12 +790,76 @@ input[type=radio] {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
     gap: 0.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
+}
+
+#price .iconify {
+    color: #F27D3C;
 }
 
 /* End */
+
+/* Problem Solution Page */
+.btn-orange {
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+}
+
+
+
+/*--------- END --------*/
+/* End */
+/* #################### MODAL CSS ######################### */
+
+.modal-content {
+    background: linear-gradient(180deg, #FAC764 0%, #F27D3C 100%);
+}
+
+#modal-list ul {
+    list-style: none;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    padding: 0;
+}
+
+#modal-list li {
+    display: table-row;
+}
+
+#modal-list b {
+    display: table-cell;
+    /* padding-right: 1em; */
+}
+
+#modal-list p {
+    display: table-cell;
+}
+
+.colon {
+    display: table-cell;
+    padding: 0px 40px;
+}
+
+.modal-header,
+.modal-footer {
+    border: none !important;
+}
+
+.modal-footer .btn {
+    background: white !important;
+}
+
+.modal-footer a {
+    text-decoration: none;
+    color: #F27D3C;
+}
+
+
+
+
+/* #################### MODAL CSS  END ######################### */
+
 /* ####################### MEDIA QUERIES  ######################### */
 
 
@@ -815,6 +934,20 @@ input[type=radio] {
         width: 50% !important;
     }
 
+    .container.kundali-vishleshan input::placeholder {
+        font-size: 0.8rem !important;
+    }
+
+    .container.kundali-vishleshan .form-select {
+        font-size: 0.8rem !important;
+    }
+
+    input[type=date]::-webkit-datetime-edit-text {
+        -webkit-appearance: none;
+        display: none;
+    }
+
+
 }
 
 
@@ -847,6 +980,12 @@ input[type=radio] {
 
     #heading2 {
         width: 230px;
+    }
+
+    /* btn-div for product button */
+    #btn-div {
+        flex-direction: column !important;
+        gap: 0.5rem;
     }
 
 }
@@ -929,10 +1068,17 @@ input[type=radio] {
 
 }
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:992px) {
     #cb2 div {
         display: block;
     }
+
+    /* btn-div for products */
+    #btn-div {
+        flex-direction: column !important;
+        gap: 0.5rem;
+    }
+
 }
 
 @media (min-width:991px) {
@@ -1010,7 +1156,7 @@ input[type=radio] {
     }
 }
 
-@media (min-width: 320px) and (max-width: 376px) {
+@media (min-width: 300px) and (max-width: 376px) {
     /* h1 {
         font-size: 30px !important;
     } */
@@ -1035,11 +1181,11 @@ input[type=radio] {
     }
 
     #heading2 {
-        width: 310px;
+        width: 300px;
     }
 }
 
-@media (min-width:320px) and (max-width:475px) {
+@media (min-width:300px) and (max-width:475px) {
     #bla {
         height: 30px;
         font-size: 14px !important;

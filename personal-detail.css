@@ -32,6 +32,7 @@
   background: white;
   border: 2px solid #f17738;
   width: 20%;
+
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-top: 40px;
@@ -52,7 +53,7 @@
 }
 @media screen and (max-width: 475px) {
   .problems {
-    justify-content: flex-start;
+    justify-content: center;
 
     flex-wrap: wrap;
   }

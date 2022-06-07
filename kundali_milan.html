@@ -115,11 +115,11 @@
             <img src="img/image 3.png" class="d-block w-100" alt="...">
         </div>
     </section>
-
+<div class="container kundali-milan">
+    <h2 id="kundali_vish" class="mx-auto">Kundali Milan</h2>
     <div class="container kundali-vish px-5 py-4" id="kundali-container">
-        <h2 id="kundali_vish" class="mx-auto">Kundali Milan</h2>
-        <div class="container d-flex flex-row g-3 justify-content-evenly">
-            <form action="" class="d-flex col-5 flex-column p-4" id="form-bride">
+        <div class="container flex-wrap d-flex flex-row g-3 justify-content-evenly">
+            <form action="" class="d-flex col-md-5 col-sm-12 flex-column p-4 mb-3" id="form-bride">
                 <h6 class="text-black"><b> वर का विवरण (Groom’s Details) </b></h6>
                 <div>
                     <label for="inputName" class="form-label">वर का नाम (Groom’s Name)</label>
@@ -156,7 +156,7 @@
                 </div>
 
             </form>
-            <form action="" class="d-flex col-5 flex-column p-4" id="form-groom">
+            <form action="" class="d-flex col-md-5 col-sm-12 flex-column p-4 mb-3" id="form-groom">
                 <h6 class="text-black"><b> कन्या का विवरण (Bride’s Details)</b></h6>
 
                 <div>
@@ -244,10 +244,50 @@
                 placeholder="कोई विशेष प्रश्न ?"></textarea>
         </div>
         <div class="d-grid mt-5 mb-5 justify-content-center">
-            <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto" type="submit">Submit</button>
+            <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto" type="submit" data-bs-target="#exampleModal4" data-bs-toggle="modal">Submit</button>
         </div>
     </div>
-
+    <!-- MODAL -->
+    <div class="modal" id="exampleModal4" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header justify-content-center">
+                    <h2 class="modal-title text-white fs-2 ">Order Details</h2>
+                </div>
+                <div class="modal-body text-white d-flex justify-content-center g-3" id="modal-list">
+                    <ul>
+                        <li><b>Service Name</b> <span class="colon">:</span>
+                            <p>Vishleshan</p>
+                        </li>
+                        <li><b>Your Name</b><span class="colon">:</span>
+                            <p>My Name</p>
+                        </li>
+                        <li><b>Vishleshan</b><span class="colon">:</span>
+                            <p>Samanya</p>
+                        </li>
+                        <li><b>Order Id</b><span class="colon">:</span>
+                            <p>SMY5862</p>
+                        </li>
+                        <li><b>Order Date</b><span class="colon">:</span>
+                            <p>12/05/2022</p>
+                        </li>
+                        <li><b>Amount</b><span class="colon">:</span>
+                            <p>₹ 399</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer justify-content-center mb-4">
+                    <button type="button" class="btn"><a href="index.html">Order Now</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- MODAL END -->
+</div>
     <footer class="text-center text-lg-start text-white">
         <section>
             <div class="row d-flex flex-row gx-0 pt-4">

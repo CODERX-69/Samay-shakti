@@ -123,4 +123,22 @@ $('.otp-number').find('input').each(function () {
 
 
 
-// overlay
+// YES NO TOGGLE
+$('.btn-toggle').click(function () {
+    $(this).find('.btn').toggleClass('active');
+
+    if ($(this).find('.btn-orange').length > 0) {
+        $(this).find('.btn').toggleClass('btn-orange');
+    }
+
+    $(this).find('.btn').toggleClass('btn-default');
+
+});
+
+$('form').submit(function () {
+    var radioValue = $("input[name='options']:checked").val();
+    if (radioValue) {
+        alert("You selected - " + radioValue);
+    };
+    return false;
+});
