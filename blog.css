@@ -1,0 +1,61 @@
+.bold {
+  font-weight: bold;
+}
+.btn {
+  margin-left: 10%;
+  color: white;
+  background: linear-gradient(180deg, #faca66 0%, #f17738 100%);
+}
+.share {
+  width: 100%;
+}
+.comments {
+  width: 80%;
+}
+.more-posts a {
+  color: #000;
+  text-decoration: none;
+}
+
+.more-posts a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+form {
+  align-items: center;
+}
+
+.links a {
+  margin-left: 10px;
+}
+.post-btn {
+  padding: 2px 10px;
+  width: 100px;
+  margin-right: 4px;
+
+  border-radius: 30px;
+  border: 1px solid rgb(113, 113, 113);
+}
+.comment-list {
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.comment-text {
+  margin-left: 20%;
+}
+.comment-text a {
+  color: black;
+  padding: 0% 10px;
+}
+@media screen and (max-width: 540px) {
+  form {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+  .comments {
+    width: 100%;
+  }
+}

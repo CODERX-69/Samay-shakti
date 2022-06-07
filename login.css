@@ -214,3 +214,11 @@ input {
         font-size: xx-small;
     }
 }
+
+
+/* secondary btn */
+.btn.btn-secondary:hover{
+    -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+}

@@ -173,7 +173,7 @@ li a:hover {
 }
 
 /*    ##################################### NAVBAR AND HEADER END  ######################################################*/
-/*  FFOOTER */
+/*  FOOTER */
 footer {
     margin-top: 40px;
     background-color: #BA1F21;
@@ -189,6 +189,45 @@ p a:hover {
 
 .copyright {
     margin-top: 60px;
+}
+
+#footer-1 {
+    border-right: 6px solid white;
+    text-align: center;
+    padding-right: 20px;
+}
+
+#footer-2 {
+    border-right: 6px solid white;
+}
+
+@media (min-width:575px) and (max-width:768px) {
+    footer p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:575px) {
+    footer p {
+        font-size: 0.5rem;
+    }
+
+    footer .row {
+        justify-content: space-around;
+    }
+
+    #footer-2 {
+        border: none;
+        width: auto;
+    }
+    #footer-1{
+        padding-right: 0px;
+        border: none;
+    }
+
+    #footer-3 {
+        width: auto;
+    }
 }
 
 /* ############# FOOTER END ######### */

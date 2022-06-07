@@ -1,0 +1,30 @@
+.about-img {
+  margin-left: 45%;
+  background: none;
+}
+#about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  padding: 50px 25px;
+  box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 540px) {
+  .about-img {
+    margin-left: 0;
+  }
+  #about-us {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .about-img {
+    width: 250px;
+  }
+  #about-us {
+    flex-direction: column-reverse;
+  }
+}
