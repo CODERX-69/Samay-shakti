@@ -209,7 +209,7 @@ p a:hover {
 
 @media (max-width:575px) {
     footer p {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     footer .row {

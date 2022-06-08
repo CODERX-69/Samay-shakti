@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="landing.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,27 +33,28 @@
             <div id="searchbar">
                 <input class="form-control me-2" id="bla" type="search" placeholder="Search" aria-label="Search"
                     data-search>
-
                 <span class="iconify" id="search-icon" data-icon="akar-icons:search"></span>
             </div>
-            <div class="auth-container" style="gap:1rem;">
-                <a href="register.html" id="btn1" class="btn auth" style=>Register</a>
-                <a href="login.html" id="btn2" class="btn auth">Login</a>
+            <span id="profile">Welcome :
+                Name</span>
+            <div class="icons">
                 <span onclick="menuToggle(); document.getElementById('drpdwn').style.display = 'block'" class="iconify"
                     id="clickable" data-icon="gg:profile">
                 </span>
                 <div class="pro-menu" id="drpdwn">
                     <ul class="pro-list">
-                        <li class="pro-items"><a href="register.html">Register</a></li>
-                        <li class="pro-items"><a href="login.html">Login</a></li>
+                        <li class="pro-items"><a href="myprofile.html">My Profile</a></li>
+                        <li class="pro-items"><a href="">My Orders</a></li>
+                        <li class="pro-items"><a href="">Track Orders</a></li>
+                        <li class="pro-items"><a href="myAddress.html">My Address</a></li>
+                        <li class="pro-items"><a href="landing.html">Logout</a></li>
                     </ul>
                 </div>
-                <span class="iconify" data-icon="bx:cart-alt"></span>
+                <span class="iconify" data-icon="bxs:cart-alt"></span>
             </div>
         </div>
     </nav>
     <section class="header">
-
         <nav class="navbar navbar-expand-lg mt-3">
             <div class="container-fluid" id="menu">
                 <a class="navbar-brand d-none" href="#">Home</a>
@@ -66,7 +65,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="kundali.html">Kundali</a>
+                            <a class="nav-link" aria-current="page" href="#">Kundali</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="vastu.html">Vastu</a>
@@ -96,64 +95,92 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Other Service</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                <div class="card my-5">
-                    <div class="card-body p-4 p-sm-5">
-                        <a href=""><span class="iconify" data-icon="akar-icons:edit" style="color: #f9b058;"
-                                data-width="20" data-height="20"></span></a>
-                        <h1 class="card-title text-center mb-5 fw-bold fs-1">My Profile</h1>
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputName1" class="form-label" id="formLabel1">Full Name <span
-                                        style="color:red;">*</span></label>
-                                <input type="text" class="form-control" id="exampleInputName1" placeholder="Full Name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputNumber1" class="form-label" id="formLabel2">Phone Number <span
-                                        style="color:red;">*</span></label>
-                                <input type="tel" class="form-control" id="exampleInputNumber1"
-                                    placeholder="Phone Number">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label" id="formLabel3">Email address <span
-                                        style="color:red;">*</span></label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label" id="formLabel4">Address<span
-                                        style="color:red;">*</span></label>
-                                <input type="textarea" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Address">
-                            </div>
-                            <div id="form-check1" class="form-check mb-3">
-                                <div>
-                                    <!-- <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                                    <label class="form-check-label" for="rememberPasswordCheck">
-                                        Show password
-                                    </label> -->
-                                    <a href="forgot_password.html"><b>Change Password</b></a>
-                                </div>
-                            </div>
-                            <div class="d-grid mt-5 mb-5 justify-content-center">
-                                <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto"
-                                    type="submit">Save</button>
-                            </div>
-                        </form>
-                        <!-- <div class="d-flex justify-content-center mt-4">
-                            <span>Don't have an account? <a href="">Register</a></span>
-                        </div> -->
+    <section id="home">
+        <div class="mt-4">
+            <img src="img/image 3.png" class="d-block w-100" alt="...">
+        </div>
+    </section>
+
+    <div class="container kundali-vishleshan">
+        <div id="kundali_vish">
+            <div class="row d-flex justify-content-around">
+                <div class="col">
+                    Product
+                </div>
+                <div class="col">
+                    Quantity
+                </div>
+                <div class="col">
+                    Total
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body px-4" id="cart">
+                <div class=" row d-flex justify-content-around mb-2 g-3" id="cart-row">
+                    <div class="col d-flex justify-content-center align-items-center py-3">
+                        <img src="img/image 8.png" alt="">
+                        <div id="cart-prdct-name">
+                            <h4 class="cart-item"><b>Astgandh अष्टगंध</b> </h4>
+                            <p class="cart-item" style="font-size:18px"><strong>50g Rs 100</strong> </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-row justify-content-center align-items-center" id="inc_dec">
+                        <button onclick="increment()">+</button>
+                        <h2 id="counting"></h2>
+                        <button onclick="decrement()">-</button>
+                    </div>
+                    <div class="col d-flex flex-row justify-content-evenly align-content-center align-items-center">
+                        <a href=""><span id="del" class="iconify" data-icon="ep:delete-filled" data-width="30"
+                                data-height="30" style="color: #f8af57;"></span></a>
+                        <h3><span id="rs" class="iconify" data-icon="fa6-solid:indian-rupee-sign"
+                                style="color: #f8af57;" data-height="21"></span> 100
+                        </h3>
                     </div>
                 </div>
+                <div class=" row d-flex justify-content-around mt-2 g-3 py-3" id="cart-row">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <img src="img/image 8.png" alt="">
+                        <div id="cart-prdct-name">
+                            <h4 class="cart-item"><b>Astgandh अष्टगंध</b> </h4>
+                            <p class="cart-item" style="font-size:18px"><strong>50g Rs 100</strong> </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-row justify-content-center align-items-center" id="inc_dec">
+                        <button onclick="increment1()">+</button>
+                        <h2 id="counting1"></h2>
+                        <button onclick="decrement1()">-</button>
+                    </div>
+                    <div class="col d-flex flex-row justify-content-evenly align-items-center">
+                        <a href=""><span id="del" class="iconify" data-icon="ep:delete-filled" data-width="30"
+                                data-height="30" style="color: #f8af57;"></span></a>
+                        <h3><span id="rs" class="iconify" data-icon="fa6-solid:indian-rupee-sign"
+                                style="color: #f8af57;" data-height="21"></span> 100
+                        </h3>
+                    </div>
+                </div>
+                <hr class="w-80">
+                <div class="row d-flex justify-content-around" id="cart-total">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        Total
+                    </div>
+                    <div class="col">
+                        200
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid mt-5 mb-5 justify-content-center">
+                <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto" type="submit">Order Now
+                </button>
             </div>
         </div>
     </div>

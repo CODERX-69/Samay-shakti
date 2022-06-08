@@ -193,6 +193,15 @@ li a:hover {
 
 }
 
+#btn1:hover, #btn2:hover{
+    background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%) !important;
+    -background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: white;
+        background-clip: text;
+
+}
+
 #btn1,
 #btn2 {
     background: linear-gradient(180deg, #F8AF57 0%, #F5974A 100%);

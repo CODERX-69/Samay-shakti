@@ -367,7 +367,7 @@ h5 a {
 #cb2 button,
 #cb3 button,
 #cb4 button {
-    width: 154px !important;
+    width: 140px !important;
     background: #FFFFFF;
     border-radius: 56.3333px;
     border: none;
@@ -406,9 +406,7 @@ h5 a {
 .card-image-wrapper {
     display: flex;
     width: 100%;
-    /* height: 250px; */
-    /* Just to show the size of the image wrapper */
-    /* background-color: darkgrey; */
+ 
 }
 
 
@@ -479,7 +477,7 @@ p a:hover {
 
 @media (max-width:575px) {
     footer p {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     footer .row {
@@ -633,9 +631,57 @@ ol {
     #login-btn {
         width: 10rem !important;
     }
+
+#cart-row {
+    background: #FFFFFF;
+    box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
+}
+
+#cart button {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 12px;
+    background-color: #F8AF57;
+    color: honeydew;
+    border: none !important;
+    border-radius: 50%;
+}
+
+#counting, #counting1 {
+    width: fit-content;
+    border: #F8AF57 3px solid !important;
+    padding: 1px 8px !important;
+    margin: 0px 10px;
+    font-size: 14px !important;
+    border-radius: 3px;
 }
 
 
+#cart img {
+    height: 50px !important;
+    /* width: 50px !important; */
+}
+#cart h3,
+#cart h4,
+#cart p{
+    font-size: 14px !important;
+}
+
+#cart #rs{
+    height: 15px !important;
+    width: 15px !important;
+}
+#cart #del{
+    height: 20px !important;
+    width: 20px !important;
+}
+#cart-total {
+    color: #F8AF57 !important;
+    font-weight: bolder;
+    font-size: 14px !important ;
+}
+
+}
 /* Kundali vishleshan */
 
 .container.kundali-vish {
@@ -737,9 +783,19 @@ input[type=radio] {
         height: 1rem !important;
     }
 
+        .card-img-top {
+            padding:15px;
+            display: block;
+            width: auto;
+            max-height: 100%;
+            margin: auto;
+        }
+
     .form-check-label {
         font-size: 0.8rem !important;
     }
+
+   
 }
 
 .form-check-label {
@@ -809,6 +865,63 @@ input[type=radio] {
 
 /*--------- END --------*/
 /* End */
+
+
+/* CART */
+
+#cart-row{
+    background: #FFFFFF;
+        box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
+}
+
+#cart button{
+        width: 30px;
+            height: 30px;
+            font-size: 15px;
+            background-color:#F8AF57;
+            color: honeydew;
+            border: none !important;
+            border-radius: 50%;
+}
+
+#inc_dic{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#counting, #counting1{
+    width: fit-content;
+    border:#F8AF57 3px solid !important;
+    padding: 1px 20px;
+    margin:0px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+#cart h3,#cart h4, #cart p{
+    color: #F8AF57;
+}
+
+ #cart img {
+     height: 125px ;
+     /* width: 100px !important; */
+ }
+ #cart-prdct-name{
+     font-size: medium ;
+ }
+ #cart-prdct-name p{
+     margin-bottom: 0px !important;
+ }
+#cart hr{
+  width: 80% !important;
+  color: #F8AF57 !important;
+  margin-top: 1rem !important;
+}
+#cart-total{
+  color: #F8AF57 !important;
+  font-weight: bolder;
+  font-size: 20px;
+}
 /* #################### MODAL CSS ######################### */
 
 .modal-content {
@@ -962,7 +1075,9 @@ input[type=radio] {
 
 
 @media (max-width:375px) {
-
+    .card-1{
+        width: 140px !important;
+    }
     #nav {
 
         display: flex;
@@ -978,6 +1093,10 @@ input[type=radio] {
         display: none;
     }
 
+    #heading{
+        margin-top: 0px !important;
+    }
+
     #heading2 {
         width: 230px;
     }
@@ -986,6 +1105,11 @@ input[type=radio] {
     #btn-div {
         flex-direction: column !important;
         gap: 0.5rem;
+    }
+
+    #kundali-container{
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
     }
 
 }
@@ -1203,6 +1327,12 @@ input[type=radio] {
 
     #bla {
         width: 110px;
+    }
+}
+
+@media (min-width:375px) and (max-width:470px) {
+    #btn-div .btn{
+        font-size: 10px !important;
     }
 }
 

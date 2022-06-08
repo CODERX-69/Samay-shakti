@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="landing.css">
-    <link rel="stylesheet" href="register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,36 +25,128 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .card span {
+            content: "\2460";
+            font-size: 48px;
+        }
+
+        .calendar-wrapper {
+            width: 360px;
+            margin: 3em auto;
+            padding: 2em;
+            border: 1px solid @calendar-border border-radius:5px;
+            background: @calendar-bg;
+
+        }
+
+        table {
+            clear: both;
+            width: 100%;
+            border: 1px solid @calendar-border;
+            border-radius: 3px;
+            border-collapse: collapse;
+            color: @calendar-color;
+        }
+
+        td {
+            height: 48px;
+            text-align: center;
+            vertical-align: middle;
+            border-right: 1px solid @calendar-border;
+            border-top: 1px solid @calendar-border;
+            width: 100% / 7;
+        }
+
+        td.not-current {
+            color: @calendar-fade-color;
+            ;
+        }
+
+        td.normal {}
+
+        td.today {
+            font-weight: 700;
+            color: @calendar-standout;
+            font-size: 1.5em;
+        }
+
+        thead td {
+            border: none;
+            color: @calendar-standout;
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+
+        #btnPrev {
+            float: left;
+            margin-bottom: 20px;
+
+            &:before {
+                content: '\f104';
+                font-family: FontAwesome;
+                padding-right: 4px;
+            }
+        }
+
+        #btnNext {
+            float: right;
+            margin-bottom: 20px;
+        }
+
+        /* #btnNext &:after {
+  content:'\f105';
+  font-family:FontAwesome;
+  padding-left:4px;
+} */
+        #btnPrev,
+        #btnNext {
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            /* color:@calendar-fade-color; */
+            cursor: pointer;
+            font-family: "Roboto Condensed", sans-serif;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            /* &:hover {
+    color:@calendar-standout;
+    font-weight:bold;
+  } */
+        }
+    </style>
 </head>
 
 <body>
     <nav id='nav' class="navbar sticky-top navbar-light bg-light">
         <div class="container-fluid">
-            <a href="index.html"><img src="img/image 1.png" alt=""></a>
+            <a href="index.html"> <a href="index.html"><img src="img/image 1.png" alt=""></a></a>
             <div id="searchbar">
                 <input class="form-control me-2" id="bla" type="search" placeholder="Search" aria-label="Search"
                     data-search>
-
                 <span class="iconify" id="search-icon" data-icon="akar-icons:search"></span>
             </div>
-            <div class="auth-container" style="gap:1rem;">
-                <a href="register.html" id="btn1" class="btn auth" style=>Register</a>
-                <a href="login.html" id="btn2" class="btn auth">Login</a>
+            <span id="profile">Welcome :
+                Name</span>
+            <div class="icons">
                 <span onclick="menuToggle(); document.getElementById('drpdwn').style.display = 'block'" class="iconify"
                     id="clickable" data-icon="gg:profile">
                 </span>
                 <div class="pro-menu" id="drpdwn">
                     <ul class="pro-list">
-                        <li class="pro-items"><a href="register.html">Register</a></li>
-                        <li class="pro-items"><a href="login.html">Login</a></li>
+                        <li class="pro-items"><a href="myprofile.html">My Profile</a></li>
+                        <li class="pro-items"><a href="">My Orders</a></li>
+                        <li class="pro-items"><a href="">Track Orders</a></li>
+                        <li class="pro-items"><a href="myAddress.html">My Address</a></li>
+                        <li class="pro-items"><a href="landing.html">Logout</a></li>
                     </ul>
                 </div>
-                <span class="iconify" data-icon="bx:cart-alt"></span>
+                <span class="iconify" data-icon="bxs:cart-alt"></span>
             </div>
         </div>
     </nav>
     <section class="header">
-
         <nav class="navbar navbar-expand-lg mt-3">
             <div class="container-fluid" id="menu">
                 <a class="navbar-brand d-none" href="#">Home</a>
@@ -66,13 +157,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="kundali.html">Kundali</a>
+                            <a class="nav-link " aria-current="page" href="kundali.html">Kundali</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="vastu.html">Vastu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Muhurt.html">Muhurt</a>
+                            <a class="nav-link active" href="Muhurt.html">Muhurt</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pujanSamagri.html">Pujan samagri</a>
@@ -82,10 +173,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="vrat_tyohar.html">Vrat & Tyauhaar</a>
-
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Ask Question</a>
+                            <a class="nav-link" href="#">Ask Question</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="book-appointment.html">Appointment</a>
@@ -103,55 +193,61 @@
         </nav>
     </section>
 
+    <section id="home">
+        <div class="mt-4">
+            <img src="img/image 3.png" class="d-block w-100" alt="...">
+        </div>
+    </section>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                <div class="card my-5">
-                    <div class="card-body p-4 p-sm-5">
-                        <a href=""><span class="iconify" data-icon="akar-icons:edit" style="color: #f9b058;"
-                                data-width="20" data-height="20"></span></a>
-                        <h1 class="card-title text-center mb-5 fw-bold fs-1">My Profile</h1>
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputName1" class="form-label" id="formLabel1">Full Name <span
-                                        style="color:red;">*</span></label>
-                                <input type="text" class="form-control" id="exampleInputName1" placeholder="Full Name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputNumber1" class="form-label" id="formLabel2">Phone Number <span
-                                        style="color:red;">*</span></label>
-                                <input type="tel" class="form-control" id="exampleInputNumber1"
-                                    placeholder="Phone Number">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label" id="formLabel3">Email address <span
-                                        style="color:red;">*</span></label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label" id="formLabel4">Address<span
-                                        style="color:red;">*</span></label>
-                                <input type="textarea" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Address">
-                            </div>
-                            <div id="form-check1" class="form-check mb-3">
+        <h2 id="kundali_vish" class="mx-auto">!! आज का व्रत त्योहार !!</h2>
+        <div class="container kundali-vish px-5 py-4" id="vrat_tyohar">
+            <div class="row" id="vrat-container">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="calendar-wrapper">
+                        <button id="btnPrev" type="button">Prev</button>
+                        <button id="btnNext" type="button">Next</button>
+                        <div id="divCal"></div>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
                                 <div>
-                                    <!-- <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                                    <label class="form-check-label" for="rememberPasswordCheck">
-                                        Show password
-                                    </label> -->
-                                    <a href="forgot_password.html"><b>Change Password</b></a>
+                                    <span>&#9312;</span>
+                                </div>
+                                <div class="d-flex justify-content-evenly align-items-center pe-4 ps-4">
+                                    <p class="text-start mb-0 mt-0 pb-0">मास शिव त्रयोदशी व्रत <br>
+                                        Mash Shiv Trayodashi Vrat</p>
                                 </div>
                             </div>
-                            <div class="d-grid mt-5 mb-5 justify-content-center">
-                                <button id="login-btn" class="btn text-white btn-login fw-bold ms-auto"
-                                    type="submit">Save</button>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span>&#9312;</span>
+                                </div>
+                                <div class="d-flex justify-content-evenly align-items-center pe-4 ps-4">
+                                    <p class="text-start mb-0 mt-0 pb-0">मास शिव त्रयोदशी व्रत <br>
+                                        Mash Shiv Trayodashi Vrat</p>
+                                </div>
                             </div>
-                        </form>
-                        <!-- <div class="d-flex justify-content-center mt-4">
-                            <span>Don't have an account? <a href="">Register</a></span>
-                        </div> -->
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span>&#9312;</span>
+                                </div>
+                                <div class="d-flex justify-content-evenly align-items-center pe-4 ps-4">
+                                    <p class="text-start mb-0 mt-0 pb-0">मास शिव त्रयोदशी व्रत <br>
+                                        Mash Shiv Trayodashi Vrat</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
