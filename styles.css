@@ -1343,6 +1343,50 @@ input[type=radio] {
 
 }
 
+/* MY ORDRS PAGE MEDIA */
+
+@media (max-width:575px) {
+    #order-details p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+        #myOrders .media-body button {
+        width: 50%;
+        font-size: 12px;
+        margin-left: 0px !important;
+    }
+
+        #myOrders .media-body {
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width:320px) {
+    #order-details p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:340px) {
+    #myOrders .media-body button {
+        width: 40%;
+        font-size: 10px;
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width:490px) {
+    #myOrders .card-body {
+        flex-direction: column !important;
+    }
+
+        #myOrders .img-fluid {
+        height: 150px;
+    }
+}
+/* MY ORDRS PAGE MEDIA END */
+
 /* EXTRAS */
 
 
