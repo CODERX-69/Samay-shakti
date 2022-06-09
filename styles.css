@@ -78,6 +78,10 @@ input[type=file] {
     z-index: 1;
 }
 
+.navbar-nav .nav-link.active {
+    color: #BA1F21 !important;
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -406,7 +410,7 @@ h5 a {
 .card-image-wrapper {
     display: flex;
     width: 100%;
- 
+
 }
 
 
@@ -632,56 +636,61 @@ ol {
         width: 10rem !important;
     }
 
-#cart-row {
-    background: #FFFFFF;
-    box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
+    #cart-row {
+        background: #FFFFFF;
+        box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
+    }
+
+    #cart button {
+        width: 20px !important;
+        height: 20px !important;
+        font-size: 12px;
+        background-color: #F8AF57;
+        color: honeydew;
+        border: none !important;
+        border-radius: 50%;
+    }
+
+    #counting,
+    #counting1 {
+        width: fit-content;
+        border: #F8AF57 3px solid !important;
+        padding: 1px 8px !important;
+        margin: 0px 10px;
+        font-size: 14px !important;
+        border-radius: 3px;
+    }
+
+
+    #cart img {
+        height: 50px !important;
+        /* width: 50px !important; */
+    }
+
+    #cart h3,
+    #cart h4,
+    #cart p {
+        font-size: 14px !important;
+    }
+
+    #cart #rs {
+        height: 15px !important;
+        width: 15px !important;
+    }
+
+    #cart #del {
+        height: 20px !important;
+        width: 20px !important;
+    }
+
+    #cart-total {
+        color: #F8AF57 !important;
+        font-weight: bolder;
+        font-size: 14px !important;
+    }
+
 }
 
-#cart button {
-    width: 20px !important;
-    height: 20px !important;
-    font-size: 12px;
-    background-color: #F8AF57;
-    color: honeydew;
-    border: none !important;
-    border-radius: 50%;
-}
-
-#counting, #counting1 {
-    width: fit-content;
-    border: #F8AF57 3px solid !important;
-    padding: 1px 8px !important;
-    margin: 0px 10px;
-    font-size: 14px !important;
-    border-radius: 3px;
-}
-
-
-#cart img {
-    height: 50px !important;
-    /* width: 50px !important; */
-}
-#cart h3,
-#cart h4,
-#cart p{
-    font-size: 14px !important;
-}
-
-#cart #rs{
-    height: 15px !important;
-    width: 15px !important;
-}
-#cart #del{
-    height: 20px !important;
-    width: 20px !important;
-}
-#cart-total {
-    color: #F8AF57 !important;
-    font-weight: bolder;
-    font-size: 14px !important ;
-}
-
-}
 /* Kundali vishleshan */
 
 .container.kundali-vish {
@@ -783,19 +792,19 @@ input[type=radio] {
         height: 1rem !important;
     }
 
-        .card-img-top {
-            padding:15px;
-            display: block;
-            width: auto;
-            max-height: 100%;
-            margin: auto;
-        }
+    .card-img-top {
+        padding: 15px;
+        display: block;
+        width: auto;
+        max-height: 100%;
+        margin: auto;
+    }
 
     .form-check-label {
         font-size: 0.8rem !important;
     }
 
-   
+
 }
 
 .form-check-label {
@@ -869,59 +878,68 @@ input[type=radio] {
 
 /* CART */
 
-#cart-row{
+#cart-row {
     background: #FFFFFF;
-        box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1.5649px 3.91226px rgba(0, 0, 0, 0.1);
 }
 
-#cart button{
-        width: 30px;
-            height: 30px;
-            font-size: 15px;
-            background-color:#F8AF57;
-            color: honeydew;
-            border: none !important;
-            border-radius: 50%;
+#cart button {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #F8AF57;
+    color: honeydew;
+    border: none !important;
+    border-radius: 50%;
 }
 
-#inc_dic{
+#inc_dic {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
 }
-#counting, #counting1{
+
+#counting,
+#counting1 {
     width: fit-content;
-    border:#F8AF57 3px solid !important;
+    border: #F8AF57 3px solid !important;
     padding: 1px 20px;
-    margin:0px 10px;
+    margin: 0px 10px;
     font-size: 18px;
     border-radius: 3px;
 }
 
-#cart h3,#cart h4, #cart p{
+#cart h3,
+#cart h4,
+#cart p {
     color: #F8AF57;
 }
 
- #cart img {
-     height: 125px ;
-     /* width: 100px !important; */
- }
- #cart-prdct-name{
-     font-size: medium ;
- }
- #cart-prdct-name p{
-     margin-bottom: 0px !important;
- }
-#cart hr{
-  width: 80% !important;
-  color: #F8AF57 !important;
-  margin-top: 1rem !important;
+#cart img {
+    height: 125px;
+    /* width: 100px !important; */
 }
-#cart-total{
-  color: #F8AF57 !important;
-  font-weight: bolder;
-  font-size: 20px;
+
+#cart-prdct-name {
+    font-size: medium;
 }
+
+#cart-prdct-name p {
+    margin-bottom: 0px !important;
+}
+
+#cart hr {
+    width: 80% !important;
+    color: #F8AF57 !important;
+    margin-top: 1rem !important;
+}
+
+#cart-total {
+    color: #F8AF57 !important;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 /* #################### MODAL CSS ######################### */
 
 .modal-content {
@@ -1075,9 +1093,10 @@ input[type=radio] {
 
 
 @media (max-width:375px) {
-    .card-1{
+    .card-1 {
         width: 140px !important;
     }
+
     #nav {
 
         display: flex;
@@ -1093,7 +1112,7 @@ input[type=radio] {
         display: none;
     }
 
-    #heading{
+    #heading {
         margin-top: 0px !important;
     }
 
@@ -1107,7 +1126,7 @@ input[type=radio] {
         gap: 0.5rem;
     }
 
-    #kundali-container{
+    #kundali-container {
         padding-left: 0.5rem !important;
         padding-right: 0.5rem !important;
     }
@@ -1331,7 +1350,7 @@ input[type=radio] {
 }
 
 @media (min-width:375px) and (max-width:470px) {
-    #btn-div .btn{
+    #btn-div .btn {
         font-size: 10px !important;
     }
 }
@@ -1351,13 +1370,13 @@ input[type=radio] {
         text-align: center;
     }
 
-        #myOrders .media-body button {
+    #myOrders .media-body button {
         width: 50%;
         font-size: 12px;
         margin-left: 0px !important;
     }
 
-        #myOrders .media-body {
+    #myOrders .media-body {
         margin-left: 0px !important;
     }
 }
@@ -1381,10 +1400,11 @@ input[type=radio] {
         flex-direction: column !important;
     }
 
-        #myOrders .img-fluid {
+    #myOrders .img-fluid {
         height: 150px;
     }
 }
+
 /* MY ORDRS PAGE MEDIA END */
 
 /* EXTRAS */
