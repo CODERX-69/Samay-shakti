@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact-us.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav id="nav" class="navbar sticky-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="index.html"><img src="img/image 1.png" alt="" /></a>
+        <div id="searchbar">
+          <input
+            class="form-control me-2"
+            id="bla"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-search
+          />
+          <span
+            class="iconify"
+            id="search-icon"
+            data-icon="akar-icons:search"
+          ></span>
+        </div>
+        <span id="profile">Welcome : Name</span>
+        <div class="icons">
+          <span
+            onclick="menuToggle(); document.getElementById('drpdwn').style.display = 'block'"
+            class="iconify"
+            id="clickable"
+            data-icon="gg:profile"
+          >
+          </span>
+          <div class="pro-menu" id="drpdwn">
+            <ul class="pro-list">
+              <li class="pro-items"><a href="myprofile.html">My Profile</a></li>
+
+              <li class="pro-items"><a href="">My Orders</a></li>
+              <li class="pro-items"><a href="">Track Orders</a></li>
+              <li class="pro-items"><a href="myAddress.html">My Address</a></li>
+              <li class="pro-items"><a href="landing.html">Logout</a></li>
+            </ul>
+          </div>
+          <span class="iconify" data-icon="bxs:cart-alt"></span>
+        </div>
+      </div>
+    </nav>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg mt-3">
+        <div class="container-fluid" id="menu">
+          <a class="navbar-brand d-none" href="#">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="kundali.html"
+                  >Kundali</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vastu.html">Vastu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Muhurt.html">Muhurt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pujanSamagri.html">Pujan samagri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="problemSolution.html"
+                  >Problem Solution</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vrat_tyohar.html">Vrat & Tyauhaar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Ask Question</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="book-appointment.html">Appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bhajan.html">Bhajan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Other Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <h3 class="contact-head container bold">Privacy Policy</h3>
+    <section id="about-us" class="container">
+      <div
+        class="contact-form About"
+        style="width: 90%; margin-left: 5%; align-items: center"
+      >
+        <p class="text-black bold" style="text-align: justify">
+          Excellence in customer service is the most important tool for
+          sustained business growth. Samayshaktiastrology.com has attached the
+          highest priority to customer satisfaction. <br />
+          <br />As a service organization, customer service and customer
+          satisfaction are the prime concerns of Samayshaktiastrology.com. When
+          there is a mismatch between the expectation of the customer and the
+          service delivered, it results in dissatisfaction and may lead to
+          complaints. Customer complaints, therefore, lead to important and
+          reliable checks on the quality of our services, systems, and
+          procedures. <br /><br />We are committed to maintaining and protecting
+          your privacy. This policy aims to explain to you what information we
+          require, how it is protected, how we use it, and with whom it is
+          shared in order to provide you an effective and satisfactory service.
+          By using our service, you agree to the terms of this Privacy Policy.
+          <br /><br />
+          Information Required by Us <br />
+          <br />We collect only limited personal information from the new user
+          that is necessary for us to provide you the efficient and satisfactory
+          service. <br /><br />Personal information and data about the user
+          collected by us are: <br /><br />At the time of registration: At the
+          time of registration, we collect and store your E-mail address and
+          cell phone number as provided by you in our database. At the time of
+          payment: We do not store the Delivery/Shipping address (Name, Address,
+          City, State, Country, and Postal code) and Phone Number at the time
+          you make a payment towards your balance. We don't store any credit
+          card information of the user. At the time of payment, the user is
+          redirected to the third-party website where the user is required to
+          provide the credit card details. Samayshaktiastrology.com does not
+          have any control of the information on the third-party website and
+          does not take any responsibility for the misuse of the credit card
+          information provided by the user to the third party. At
+          Samayshaktiastrology.com, we assure to protect your information and
+          will not be distributed to any third party unless you explicitly
+          consent to share this information. Use of Information collected
+          <br /><br />
+          Samayshaktiastrology.com uses the collected information to provide you
+          the user-friendly, efficient, smooth, and satisfactory service. We
+          further use this information, to respond to your suggestions,
+          feedback, and disputes if any, and enforce the Terms and Conditions of
+          Service agreement. The information provided by you is used for the
+          following purposes: <br /><br />
+          <br />
+          Email <br /><br />We use the email address provided by you:
+          <br /><br />As a unique identifier or login id that helps us to
+          identify your details for processing any information in relation to
+          your account. <br /><br />Contacting user in case of any account or
+          payment related need Participation in any promotional campaign or
+          content organized by us Processing request for subscription and/or
+          unsubscription for e-newsletter <br /><br />
+          Password <br /><br />You are required to use a password or security
+          code with the provided login id to logon to our service in secured
+          mode. As per the Terms and Conditions of Service agreement, you are
+          solely responsible to keep this password confidential and for all
+          activities originating from the misuse of the password. Please change
+          your password at regular intervals to maintain its confidentiality.
+          <br /><br />
+          Name <br /><br />This information allows us to address you in a
+          dignified and respectful manner. <br /><br />Delivery/Shipping Address
+          <br /><br />The addresses are used to deliver the orders at the
+          specified location in stipulated time and these addresses are further
+          stored in your address book in our database for future use.
+          <br /><br />Phone Number <br /><br />We use your phone number to keep
+          you updated with your Samayshaktiastrology.com balance, sending you
+          SMS for new prepaid plans or vouchers, confirming your authenticity,
+          and updating you with the latest news on Samayshaktiastrology.com
+          <br /><br />
+          Credit Card <br /><br />Information We don't store any credit card
+          information of the user. At the time of payment, while placing an
+          order, the user is redirected to the third-party website where the
+          user is required to provide the credit card details.
+          Samayshaktiastrology.com does not have any control of the information
+          on the third-party website and does not take any responsibility for
+          the misuse of the credit card information provided by the user to the
+          third party. <br /><br />
+          Sharing of Information <br /><br />
+          Samayshaktiastrology.com may share provided Personal Information with
+          carefully screened third-party service providers for the sole purpose
+          of providing you with the products, services, and information you have
+          requested. Examples of such third-party service providers are credit
+          card authorization companies, mobile operators, and targeted
+          advertisers. Samayshaktiastrology.com assures you that they do not
+          store, retain or access your information except to provide our
+          services to you and not for any other purpose. <br /><br />
+          Keeping you informed <br /><br />
+          Samayshaktiastrology.com keeps you informed about new features,
+          products, and promotions via email. From time to time, you may receive
+          information on carefully screened third parties whose products or
+          services may be of interest to you. <br /><br />Changes and
+          Modification <br /><br />
+          Samayshaktiastrology.com reserves the right to modify the Privacy
+          Policy at any time. If our privacy policy changes, the revised policy
+          will be posted on this site and we will change the 'updated' date at
+          the bottom of this page to reflect the date of the modification.
+          Please visit this page regularly to see the changes if any.
+          <br /><br />
+          Laws and Regulations <br /><br />
+          Samayshaktiastrology.com may be required by law to disclose your
+          Personal Information to proper law enforcement agencies; even if you
+          requested that we don't share your information. This information may
+          be necessary to identify, contact or bring legal action against anyone
+          who committed any offense as per stated laws and regulations.
+          <br /><br /><br />
+          Merger, Acquisition, and Termination of Service <br /><br />
+          If we merge with or are acquired by another company, the resulting
+          combined company will use the Personal Information you have provided
+          as described in this policy. If we cease operation, your Personal
+          Information may be transferred to and used by another company that
+          offers similar or related products or services. <br /><br />
+          Contact Us <br /><br />
+          Samayshaktiastrology.com will do its best to keep your entire
+          information private, and to guard your privacy by continuously
+          evaluating the enforcement of our policies stipulated in this Privacy
+          Policy. Please contact us in any of the following cases: <br /><br />
+          If any of your personal information changes or you identify a mistake
+          in our records. If you feel that we are not abiding by our stipulated
+          privacy policy. We will do our best to resolve your inquiry as soon as
+          possible.
+        </p>
+      </div>
+    </section>
+
+    <footer class="text-center text-lg-start text-white">
+      <section>
+        <div class="row d-flex flex-row gx-0 pt-4">
+          <div
+            id="footer-1"
+            class="col-sm-6 col-md-4 col-lg-4 col-xs-6 d-flex flex-column flex-wrap justify-content-center align-content-center mb-4"
+          >
+            <h1 class="text-uppercase fw-bold">SAMAY SHAKTI</h1>
+            <p>
+              Samayshakti.com is an initiative of SAMAY SHAKTI ASTROLOGY
+              SERVICES PRIVATE LIMITED <br />
+              founded Surendra Mishra who has <br />
+              Divine Vision to bring Astrology Services to all .
+            </p>
+          </div>
+          <div
+            id="footer-2"
+            class="col-sm-6 col-md-4 col-lg-4 col-xs-6 d-flex flex-column flex-wrap justify-content-center align-content-center mb-4"
+          >
+            <h6 class="text-uppercase fw-bold">Quick links</h6>
+            <p>
+              <a href="about-us.html" class="text-white">About us</a>
+            </p>
+            <p>
+              <a href="contact-us.html" class="text-white">Contact us</a>
+            </p>
+            <p>
+              <a href="disclaimer.html" class="text-white">Disclaimer</a>
+            </p>
+            <p>
+              <a href="privacy-policy.html" class="text-white"
+                >Privacy and Policy</a
+              >
+            </p>
+            <p>
+              <a href="terms-and-uses.html" class="text-white"
+                >Terms and Conditions</a
+              >
+            </p>
+          </div>
+          <div
+            id="footer-3"
+            class="col-sm-6 col-md-4 col-lg-4 col-xs-6 d-flex flex-column flex-wrap justify-content-center align-content-center mb-4"
+          >
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <p>
+              <i class="fas fa-home mr-3"></i>
+              <a class="text-white" href="tel:(+91)90062328298"
+                >900 623 28298</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>
+              <a
+                class="text-white"
+                href="mailto:support@samayshakti.com"
+                class="text-center"
+                >support@samayshakti.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © All Rights Reserved 2022
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

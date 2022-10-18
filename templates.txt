@@ -1,0 +1,52 @@
+<div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-4 mt-5"
+                        style="border-right: 6px solid white;">
+                        <!-- Content -->
+                        <h1 class="text-uppercase fw-bold">SAMAY SHAKTI</h1>
+                        <p>
+                            Samayshakti.com is an initiative of SAMAY SHAKTI ASTROLOGY SERVICES PRIVATE LIMITED founded
+                            Surendra Mishra who has
+                            Divine Vision to bring Astrology Services to all .
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <h6 class="text-uppercase fw-bold">Quick links</h6>
+                    <p>
+                        <a href="#!" class="text-white">About us</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Contact us</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Disclaimer</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Privacy and Policy</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Terms and Conditions</a>
+                    </p>
+                </div>
+                <!-- <div class="d-flex flex-column col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-4 mt-5" > -->
+                <!-- Links -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="d-flex flex-column col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-4 mt-5"
+                    style="border-left: 6px solid white;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> <a class="text-white" href="tel:(+91)90062328298">900 623
+                            28298</a></p>
+                    <p><i class="fas fa-envelope mr-3"></i> <a class="text-white" href="mailto:support@samayshakti.com"
+                            class="text-center">support@samayshakti.com</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            </div>

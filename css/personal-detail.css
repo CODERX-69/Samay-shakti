@@ -1,0 +1,67 @@
+.personal-detail {
+  width: 78%;
+  margin-left: 15%;
+}
+
+.personal-form {
+  width: 90%;
+}
+
+#bttn {
+  color: #faca66;
+  text-align: center;
+  background: white;
+  border: 2px solid #f17738;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 40px;
+}
+
+#bttn:hover,
+#bttn:active {
+  color: white;
+  background: linear-gradient(180deg, #faca66 0%, #f17738 100%);
+}
+.problems input {
+  display: none;
+}
+.problems label {
+  color: #faca66;
+  font-size: 14px;
+  text-align: center;
+  background: white;
+  border: 2px solid #f17738;
+  width: 20%;
+
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 40px;
+}
+.problems input[type="checkbox"]:checked + label,
+.problems input[type="radio"]:checked + label {
+  color: white;
+  background: linear-gradient(180deg, #faca66 0%, #f17738 100%);
+}
+@media screen and (max-width: 540px) {
+  .personal-detail {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .personal-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .problems {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+  .problems label {
+    width: 85px;
+    /* margin: 0; */
+
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+}

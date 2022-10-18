@@ -1,0 +1,123 @@
+.player {
+  margin-left: 90px;
+}
+.player-btn {
+  margin-left: 30px;
+}
+.bttn {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background: linear-gradient(180deg, #f9b058 0%, #f6984b 100%);
+  box-shadow: 0px 1.80169px 3.60338px rgba(55, 46, 152, 0.65),
+    inset 3.60338px 3.60338px 5.40507px rgba(255, 255, 255, 0.2);
+  border: 1px solid #f9b058;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding: 0px 6px 0px 4px;
+}
+.btn-dnld {
+  background: white;
+  color: orange;
+}
+.btn-dnld:hover,
+.btn-dnld:active {
+  background: orange;
+  color: white;
+}
+#bhajan-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+#play-dnld {
+  margin-top: -40px;
+}
+
+input[type="range"] {
+  overflow: hidden;
+  width: 200px;
+  -webkit-appearance: none;
+  background-color: #ffefdb;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+
+  -webkit-appearance: none;
+  color: #f6984b;
+  margin-top: -1px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  /* cursor: ew-resize; */
+  background: #434343;
+  box-shadow: -200px 0 0 200px #f6984b;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background: linear-gradient(180deg, #f9b058 0%, #f6984b 100%);
+}
+input[type="range"]::-moz-range-track {
+  background-color: #ffefdb;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background: linear-gradient(180deg, #f9b058 0%, #f6984b 100%);
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #ffefdb;
+}
+@media screen and (max-width: 820px) {
+  .player {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .btn-dnld {
+    margin-top: 75px;
+    margin-left: 15px;
+    border: 1px solid orange;
+    background: white;
+    color: orange;
+  }
+  .btn-dnld:hover,
+  .btn-dnld:active {
+    background: orange;
+    color: white;
+  }
+  #bhajan-title {
+    font-size: 20px;
+  }
+  #bhajan-detail {
+    font-size: 14px;
+  }
+  .problems {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .problems label {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .player {
+    margin: 0;
+    text-align: center;
+  }
+  .player-btn {
+    margin: 0;
+  }
+}

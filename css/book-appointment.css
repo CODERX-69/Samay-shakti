@@ -1,0 +1,228 @@
+#book-appointment {
+  margin-top: 30px;
+}
+.book-appointment-main {
+  width: 80%;
+  margin-left: 10%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 4%;
+}
+
+.card-image {
+  width: 100%;
+  /* margin-left: 5%;
+   */
+  /* margin-top: 30px; */
+}
+.card-image img {
+  border: 4px solid orange;
+}
+.heading-appoint {
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.dates,
+.call-type {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0px 2.10916px 5.2729px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.call-type {
+  justify-content: space-around;
+}
+.dates input,
+.call-type input {
+  display: none;
+}
+.dates label,
+.call-type label {
+  color: #faca66;
+  white-space: wrap !important;
+  color: orange;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 70px;
+  height: 80px;
+  text-align: center;
+  background: white;
+  box-shadow: 0px 1.27312px 3.18281px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  border: 1px solid #f17738;
+  border-radius: 4px;
+}
+
+.dates input[type="radio"]:checked + label,
+.call-type input[type="radio"]:checked + label {
+  color: white;
+  background: linear-gradient(180deg, #faca66 0%, #f17738 100%);
+}
+
+.sd-container {
+  position: relative;
+  /* float: left; */
+}
+
+.sd {
+  border: 1px solid #f17738;
+  outline: none;
+  border-radius: 4px;
+  /* padding: 5px 10px; */
+  height: 80px;
+  width: 70px;
+  /* margin-top: 15px; */
+  margin-left: 4px;
+}
+
+.open-button {
+  position: absolute;
+  top: 5px;
+  right: 34px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  pointer-events: none;
+}
+
+.open-button button {
+  border: none;
+  background: transparent;
+}
+.shift {
+  align-items: center;
+}
+.shift label {
+  min-width: 103px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.call-type label {
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+}
+.call-type input[type="radio"]:checked + .call-type-text {
+  color: white;
+}
+.call-type-icon .iconify {
+  margin-left: 5px;
+  padding: 2px;
+  color: orange;
+  background: #fff;
+  border-radius: 10px;
+}
+.call-type-text {
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.call-type input[type="radio"]:checked + .call-type-icon .iconify {
+  background: white;
+  color: orange;
+}
+
+@media screen and (max-width: 769px) {
+  /* .dates label {
+    width: 50px;
+  } */
+  .problems {
+    justify-content: center;
+  }
+  .dates {
+    justify-content: center;
+  }
+  .call-type {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 542px) {
+  .book-appointment-main {
+    width: 92%;
+    margin-left: 4%;
+  }
+
+  .problems {
+    justify-content: center;
+  }
+  .dates {
+    justify-content: center;
+  }
+  .call-type {
+    justify-content: center;
+  }
+}
+
+.bg-new {
+  background: linear-gradient(180deg, #faca66 0%, #f17738 100%);
+}
+.bg-btn:hover {
+  background: unset;
+  background-color: #2d3748;
+}
+.calendar-container-2 {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .calendar-container {
+    padding: 0;
+  }
+  .book-appointment-main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 100% !important;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 615px) {
+  .px-4 {
+    padding: 10px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .calendar-container {
+    display: none;
+  }
+  .calendar-container-2 {
+    display: unset;
+  }
+}
+
+[type="date"] {
+  background: #fff
+    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+    97% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* custom styles*/
+label {
+  display: block;
+}
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
